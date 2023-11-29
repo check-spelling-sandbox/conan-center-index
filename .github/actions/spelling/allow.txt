@@ -1,0 +1,6 @@
+github
+https
+itk
+ssh
+ubuntu
+workarounds
