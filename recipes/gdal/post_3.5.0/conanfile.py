@@ -33,7 +33,7 @@ class GdalConan(ConanFile):
         "with_arrow": [True, False],
         "with_blosc": [True, False],
         "with_cfitsio": [True, False],
-        # with_cypto option has been renamed with_openssl in version 3.5.1
+        # with_crypto option has been renamed with_openssl in version 3.5.1
         "with_crypto": [True, False, "deprecated"],
         "with_cryptopp": [True, False],
         "with_curl": [True, False],
