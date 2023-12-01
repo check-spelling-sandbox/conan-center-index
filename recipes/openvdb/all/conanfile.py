@@ -88,7 +88,7 @@ class OpenVDBConan(ConanFile):
         if self.options.with_log4cplus:
             self.requires("log4cplus/2.0.7")
 
-    def _check_compilier_version(self):
+    def _check_compiler_version(self):
         compiler = str(self.settings.compiler)
         version = tools.Version(self.settings.compiler.version)
         minimum_version = self._compilers_min_version.get(compiler, False)
@@ -101,7 +101,7 @@ class OpenVDBConan(ConanFile):
         if self.settings.arch not in ("x86", "x86_64"):
             if self.options.simd:
                 raise ConanInvalidConfiguration("Only intel architectures support SSE4 or AVX.")
-        self._check_compilier_version()
+        self._check_compiler_version()
 
     def source(self):
         tools.get(**self.conan_data["sources"][self.version], strip_root=True, destination=self._source_subfolder)
