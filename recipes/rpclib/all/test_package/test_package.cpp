@@ -25,7 +25,7 @@ int main() {
         return std::vector<uint32_t>({1,2,3,4,5,6,7});
     });
 
-    // dont acutally run this, this is just for testing
+    // dont actually run this, this is just for testing
     //srv.run();
 
     return 0;
