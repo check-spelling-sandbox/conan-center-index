@@ -395,7 +395,7 @@ class FFMpegConan(ConanFile):
         # Options --datadir, --docdir, --incdir, and --mandir are not injected by AutotoolsToolchain  but their default value
         # in ffmpeg script matches expected conan install layout.
         # Several options injected by AutotoolsToolchain are unknown from this configure script and must be pruned.
-        # This must be done before modifying tc.configure_args, because update_configre_args currently removes
+        # This must be done before modifying tc.configure_args, because update_configure_args currently removes
         # duplicate configuration keys, even when they have different values, such as list of encoder flags.
         # See https://github.com/conan-io/conan-center-index/issues/17140 for further information.
         tc.update_configure_args({
