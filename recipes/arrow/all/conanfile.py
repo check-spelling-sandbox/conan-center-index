@@ -34,7 +34,7 @@ class ArrowConan(ConanFile):
         "deprecated": [True, False],
         "encryption": [True, False],
         "filesystem_layer":  [True, False],
-        "hdfs_bridgs": [True, False],
+        "hdfs_bridges": [True, False],
         "plasma": [True, False, "deprecated"],
         "simd_level": [None, "default", "sse4_2", "avx2", "avx512", "neon", ],
         "runtime_simd_level": [None, "sse4_2", "avx2", "avx512", "max"],
@@ -81,7 +81,7 @@ class ArrowConan(ConanFile):
         "deprecated": True,
         "encryption": False,
         "filesystem_layer": False,
-        "hdfs_bridgs": False,
+        "hdfs_bridges": False,
         "plasma": "deprecated",
         "simd_level": "default",
         "runtime_simd_level": "max",
@@ -407,7 +407,7 @@ class ArrowConan(ConanFile):
         tc.variables["ARROW_DATASET"] = self.options.dataset_modules
         tc.variables["ARROW_FILESYSTEM"] = bool(self.options.filesystem_layer)
         tc.variables["PARQUET_REQUIRE_ENCRYPTION"] = bool(self.options.encryption)
-        tc.variables["ARROW_HDFS"] = bool(self.options.hdfs_bridgs)
+        tc.variables["ARROW_HDFS"] = bool(self.options.hdfs_bridges)
         tc.variables["ARROW_VERBOSE_THIRDPARTY_BUILD"] = True
         tc.variables["ARROW_BUILD_SHARED"] = bool(self.options.shared)
         tc.variables["ARROW_BUILD_STATIC"] = not bool(self.options.shared)
