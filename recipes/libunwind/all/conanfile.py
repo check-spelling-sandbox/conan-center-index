@@ -11,7 +11,7 @@ import shutil
 
 required_conan_version = ">=1.53.0"
 
-class LiunwindConan(ConanFile):
+class LibunwindConan(ConanFile):
     name = "libunwind"
     description = "Manipulate the preserved state of each call-frame and resume the execution at any point."
     license = "MIT"
