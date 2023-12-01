@@ -129,7 +129,7 @@ class LLVMOpenMpConan(ConanFile):
         tc.variables["OPENMP_STANDALONE_BUILD"] = True
         tc.variables["LIBOMP_ENABLE_SHARED"] = self.options.shared
         tc.variables["OPENMP_ENABLE_LIBOMPTARGET"] = self.options.build_libomptarget
-        # Do not buidl OpenMP Tools Interface (OMPT)
+        # Do not build OpenMP Tools Interface (OMPT)
         tc.variables["LIBOMP_OMPT_SUPPORT"] = False
         tc.generate()
 
