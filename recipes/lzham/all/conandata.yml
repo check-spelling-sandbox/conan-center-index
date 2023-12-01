@@ -5,7 +5,7 @@ sources:
 patches:
   "cci.20220103":
     - patch_file: "patches/aarch64-yield-cci.20220103.patch"
-      patch_description: 'Uses "yield" rather than "pause" mneumonic to fix
+      patch_description: 'Uses "yield" rather than "pause" mnemonic to fix
         aarch64 build'
       patch_type: portability
 
