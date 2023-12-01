@@ -58,11 +58,11 @@ int main() {
 		AND the next candidate bin size differs from the last successful one by *less* then discard_step.
 
 		The best possible granuarity is achieved with discard_step = 1.
-		If you pass a negative discard_step, the algoritm will search with even more granularity -
-		E.g. with discard_step = -4, the algoritm will behave as if you passed discard_step = 1,
+		If you pass a negative discard_step, the algorithm will search with even more granularity -
+		E.g. with discard_step = -4, the algorithm will behave as if you passed discard_step = 1,
 		but it will make as many as 4 attempts to optimize bins down to the single pixel.
 
-		Since discard_step = 0 does not make sense, the algoritm will automatically treat this case 
+		Since discard_step = 0 does not make sense, the algorithm will automatically treat this case 
 		as if it were passed a discard_step = 1.
 
 		For common applications, a discard_step = 1 or even discard_step = 128
