@@ -10,7 +10,7 @@ patches:
     - patch_file: "patches/0004-2.8.2-missing-include.patch"
     - patch_file: "patches/0005-drop-runtime.patch"
   "2.6.0":
-    - patch_file: "patches/0001-cmake-install-pic-cxx-standard-sytem-libs.patch"
+    - patch_file: "patches/0001-cmake-install-pic-cxx-standard-system-libs.patch"
     - patch_file: "patches/0002-lowercase-include-system-libs-windows.patch"
     - patch_file: "patches/0003-typo-declspec.patch"
     - patch_file: "patches/0004-2.6.0-missing-include.patch"

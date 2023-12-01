@@ -65,7 +65,7 @@ class TarConan(ConanFile):
             "--with-bzip2={}".format(bzip2_exe),
             "--with-lzip={}".format(lzip_exe),
             "--with-lzma={}".format(lzma_exe),
-            # "--without-lzop",  # FIXME: this will use sytem lzop
+            # "--without-lzop",  # FIXME: this will use system lzop
             "--with-xz={}".format(xz_exe),
             # "--without-zstd",  # FIXME: this will use system zstd (current zstd recipe does not build programs)
         ]
