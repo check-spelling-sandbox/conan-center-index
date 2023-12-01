@@ -35,7 +35,7 @@ void testTwoColour(int flags) {
   for (int channel = 0; channel < 3; ++channel) {
     for (int value1 = 0; value1 < 255; ++value1) {
       for (int value2 = value1 + 1; value2 < 255; ++value2) {
-        // set the channnel value
+        // set the channel value
         for (int i = 0; i < 16; ++i) {
           input[4 * i + channel] = static_cast<squish::u8>((i < 8) ? value1 : value2);
         }
