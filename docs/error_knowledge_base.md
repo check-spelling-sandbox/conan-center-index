@@ -404,7 +404,7 @@ See also: [Submitting a Package](adding_packages/README.md#submitting-a-package)
 
 #### **<a name="KB-H066">#KB-H066</a>: "SHORT_PATHS USAGE"**
 
-The recipe missess [short_paths](https://docs.conan.io/1/reference/conanfile/attributes.html#short-paths) attribute.
+The recipe misses [short_paths](https://docs.conan.io/1/reference/conanfile/attributes.html#short-paths) attribute.
 It may happen due to the very long paths within source, build or package directories during the package creating.
 Consider adding the following code:
 
