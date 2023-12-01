@@ -72,13 +72,13 @@ int main(int argc, char *argv[]) {
     jvirt_barray_ptr *src_coeffs = jpeg_read_coefficients(&src);
     jpeg_copy_critical_parameters(&src, &dst);
 
-    jvirt_barray_ptr *dst_coefs = jtransform_adjust_parameters(&src, &dst, src_coeffs, &transform);
+    jvirt_barray_ptr *dst_coeffs = jtransform_adjust_parameters(&src, &dst, src_coeffs, &transform);
 
 
     FILE *fout = fopen(argv[2], "wb");
     jpeg_stdio_dest(&dst, fout);
 
-    jpeg_write_coefficients(&dst, dst_coefs);
+    jpeg_write_coefficients(&dst, dst_coeffs);
 
     jcopy_markers_execute(&src, &dst, JCOPYOPT_ALL);
     jtransform_execute_transformation(&src, &dst, src_coeffs, &transform);
