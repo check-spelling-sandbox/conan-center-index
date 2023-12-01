@@ -125,7 +125,7 @@ There is a new way of setting the `cpp_info` information with these
 generators using the ``set_property(property_name, value)`` method.
 
 Both of these two models **will live together in recipes** to make
-recipes compatible for both 1.x and 2.0 users. Deprecated feilds are not to be removed at this time.
+recipes compatible for both 1.x and 2.0 users. Deprecated fields are not to be removed at this time.
 
 To understand the impact of these and the relation between different generates, refer to the 
 [migrating properties](https://docs.conan.io/1/migrating_to_2.0/properties.html) documentation.
