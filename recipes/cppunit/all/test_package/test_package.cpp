@@ -13,7 +13,7 @@ main()
   // Create the event manager and test controller
   CPPUNIT_NS::TestResult controller;
 
-  // Add a listener that colllects test result
+  // Add a listener that collects test result
   CPPUNIT_NS::TestResultCollector result;
   controller.addListener( &result );
 
