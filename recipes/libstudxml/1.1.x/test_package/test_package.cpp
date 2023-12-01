@@ -2,7 +2,7 @@
 #include <sstream>
 
 int main() {
-    std::istringstream is("<root><nested>X</nasted></root>");
+    std::istringstream is("<root><nested>X</nested-></root>");
     xml::parser p(is, "test");
 
     bool success = true;
