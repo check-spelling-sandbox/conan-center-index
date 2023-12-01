@@ -6,7 +6,7 @@ if(WIN32 AND BUILD_SHARED_LIBS AND MSVC)
 endif()
 
 option(USE_SSE "Optimized for speed on CPUs supporting SSE2, SSSE3, SSE4.1, AVX, or XOP" OFF)
-option(USE_NEON "Optimiced for arm CPUs" OFF)
+option(USE_NEON "Optimized for arm CPUs" OFF)
 
 set(src ${CMAKE_CURRENT_LIST_DIR}/src)
 
