@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
         return 1;
     }
     if (im.getModelPtr() == NULL) {
-        fprintf(stderr, "Bad model ointer\n");
+        fprintf(stderr, "Bad model pointer\n");
         return 1;
     }
     return 0;
