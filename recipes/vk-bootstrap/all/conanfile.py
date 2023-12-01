@@ -12,7 +12,7 @@ required_conan_version = ">=1.54.0"
 
 class VkBootstrapConan(ConanFile):
     name = "vk-bootstrap"
-    description = "Vulkan bootstraping library."
+    description = "Vulkan bootstrapping library."
     license = "MIT"
     topics = ("vulkan", "bootstrap", "setup")
     homepage = "https://github.com/charles-lunarg/vk-bootstrap"
