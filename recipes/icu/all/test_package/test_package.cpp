@@ -187,7 +187,7 @@ static void demo_C_Unicode_strings() {
     /* Compare two strings case-insensitively using full case folding */
     compare=u_strcasecmp(buffer, cmpText, U_FOLD_CASE_DEFAULT);
     if(compare!=0) {
-        printf("String case insensitive comparison error, expected \"AbC\" to be equal to \"ABC\"\n");
+        printf("String case-insensitive comparison error, expected \"AbC\" to be equal to \"ABC\"\n");
     }
 }
 
