@@ -136,7 +136,7 @@ class Antlr4CppRuntimeConan(ConanFile):
 
         fix_apple_shared_install_name(self)
 
-        # TODO: to remove in conan v2 once cmake_find_package* generatores removed
+        # TODO: to remove in conan v2 once cmake_find_package* generators removed
         self._create_cmake_module_alias_targets(
             os.path.join(self.package_folder, self._module_file_rel_path),
             {"antlr4_shared" if self.options.shared else "antlr4_static": "antlr4-cppruntime::antlr4-cppruntime"}
@@ -172,7 +172,7 @@ class Antlr4CppRuntimeConan(ConanFile):
         elif is_apple_os(self):
             self.cpp_info.frameworks = ["CoreFoundation"]
 
-        # TODO: to remove in conan v2 once cmake_find_package* generatores removed
+        # TODO: to remove in conan v2 once cmake_find_package* generators removed
         self.cpp_info.filenames["cmake_find_package"] = "antlr4-runtime"
         self.cpp_info.filenames["cmake_find_package_multi"] = "antlr4-runtime"
         self.cpp_info.build_modules["cmake_find_package"] = [self._module_file_rel_path]
