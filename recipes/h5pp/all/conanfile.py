@@ -53,7 +53,7 @@ class H5ppConan(ConanFile):
         if Version(self.version) < "1.10.0":
             # These dependencies are always required before h5pp 1.10.0:
             #   * h5pp < 1.10.0 includes any version of headers indiscriminately (e.g. system headers),
-            #     and can't tell if the the corresponding library will be linked. This makes the,
+            #     and can't tell if the corresponding library will be linked. This makes the,
             #     build and /link steps non-deterministic.
             #   * h5pp >= 1.10.0 fixes the issue with H5PP_USE_<LIB> preprocessor flags, to make sure
             #     that including the headers is intentional.
