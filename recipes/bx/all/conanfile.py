@@ -119,7 +119,7 @@ class bxConan(ConanFile):
             msbuild.platform = "Win32" if self.settings.arch == "x86" else msbuild.platform
             msbuild.build(os.path.join(self._bx_path, ".build", "projects", genie_VS, "bx.sln"), targets=self._projs)
         else:
-            # Not sure if XCode can be spefically handled by conan for building through, so assume everything not VS is make
+            # Not sure if XCode can be specifically handled by conan for building through, so assume everything not VS is make
             # gcc-multilib and g++-multilib required for 32bit cross-compilation, should see if we can check and install through conan
             
             # Conan to Genie translation maps
