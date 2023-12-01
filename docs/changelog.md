@@ -736,7 +736,7 @@
 
 - Raise error if zero packages are generated
 - Remove "No beta user" label if corresponding check pass
-- [engineering] Unify catchs and simplify slackSend function
+- [engineering] Unify catches and simplify slackSend function
 - [engineering] Pipeline step to create all packages in stages
 - [engineering] Pipeline step to compute and reduce 'packageID'
 - [engineering] Simplify 'ComputePackageIDs' command
