@@ -78,7 +78,7 @@ as there are a few cases to look out for:
   ```
 
 For more information refere to the [CMakeToolchain docs](https://docs.conan.io/1/reference/conanfile/tools/cmake/cmaketoolchain.html)
-or check out the converstaion in conan-io/conan#11937 for the brave.
+or check out the conversation in conan-io/conan#11937 for the brave.
 
 ## New conf_info properties
 
