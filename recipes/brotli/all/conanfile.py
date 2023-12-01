@@ -117,7 +117,7 @@ class BrotliConan(ConanFile):
             self.cpp_info.components["brotlienc"].system_libs = ["m"]
 
         # TODO: to remove in conan v2 once cmake_find_package* & pkg_config generators removed.
-        #       do not set this target in CMakeDeps, it was a mistake, there is no official brotil config file, nor Find module file
+        #       do not set this target in CMakeDeps, it was a mistake, there is no official brotli config file, nor Find module file
         self.cpp_info.names["cmake_find_package"] = "Brotli"
         self.cpp_info.names["cmake_find_package_multi"] = "Brotli"
         self.cpp_info.components["brotlicommon"].names["pkg_config"] = "libbrotlicommon"
