@@ -22,7 +22,7 @@ class WilConan(ConanFile):
     homepage = "https://github.com/microsoft/wil"
     topics = ("win", "wil", "header-only")
     package_type = "header-library"
-    # only arch is aplicable, windows library
+    # only arch is applicable, windows library
     settings = "os", "arch", "compiler", "build_type" 
     
     no_copy_source = True
