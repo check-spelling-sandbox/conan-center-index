@@ -16,13 +16,13 @@ int main() {
     idx_t xadj[6 + 1] = {0, 2, 5, 7, 9, 12, 14};
 
     // Adjacent vertices in consecutive index order
-    idx_t adjncy[2 * 7] = {1, 3, 0, 4, 2, 1, 5, 0, 4, 3, 1, 5, 4, 2};
+    idx_t adjacency[2 * 7] = {1, 3, 0, 4, 2, 1, 5, 0, 4, 3, 1, 5, 4, 2};
 
     // Weights of vertices
     // if all weights are equal then can be set to NULL
     idx_t vwgt[6 * 1];
 
-    int ret = METIS_PartGraphKway(&nVertices,& nWeights, xadj, adjncy,
+    int ret = METIS_PartGraphKway(&nVertices,& nWeights, xadj, adjacency,
                                   NULL, NULL, NULL, &nParts, NULL,
                                   NULL, NULL, &objval, part);
 
