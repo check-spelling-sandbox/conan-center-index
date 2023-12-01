@@ -149,7 +149,7 @@ class CapnprotoConan(ConanFile):
         else:
             with chdir(self, os.path.join(self.source_folder, "c++")):
                 autotools = Autotools(self)
-                # TODO: replace by a call to autootols.autoreconf() in c++ folder once https://github.com/conan-io/conan/issues/12103 implemented
+                # TODO: replace by a call to autotools.autoreconf() in c++ folder once https://github.com/conan-io/conan/issues/12103 implemented
                 self.run("autoreconf --force --install")
                 autotools.configure(build_script_folder=os.path.join(self.source_folder, "c++"))
                 autotools.make()
