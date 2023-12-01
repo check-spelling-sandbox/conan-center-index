@@ -14,7 +14,7 @@ class DiligentCoreConan(ConanFile):
     name = "diligent-core"
     url = "https://github.com/conan-io/conan-center-index"
     homepage = "https://github.com/DiligentGraphics/DiligentCore"
-    description = "Diligent Core is a modern cross-platfrom low-level graphics API."
+    description = "Diligent Core is a modern cross-platform low-level graphics API."
     license = "Apache-2.0"
     topics = ("graphics")
     settings = "os", "compiler", "build_type", "arch"

@@ -5,7 +5,7 @@
 int main() {
     bool initialized = cpuinfo_initialize();
     if (!initialized) {
-        printf("cpuinfo doesn't support this platforn\n");
+        printf("cpuinfo doesn't support this platform\n");
         return 0;
     }
     printf("processors count: %u\n", cpuinfo_get_processors_count());
