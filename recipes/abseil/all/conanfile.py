@@ -72,7 +72,7 @@ class AbseilConan(ConanFile):
 
         if self.options.shared and is_msvc(self):
             # upstream tries its best to export symbols, but it's broken for the moment
-            raise ConanInvalidConfiguration(f"{self.ref} shared not availabe for Visual Studio (yet)")
+            raise ConanInvalidConfiguration(f"{self.ref} shared not available for Visual Studio (yet)")
 
     def layout(self):
         cmake_layout(self, src_folder="src")

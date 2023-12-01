@@ -64,7 +64,7 @@ int main(void) {
             }
             else if(portNumber>4850)
             {
-                printf("ports from 4840 to 4850 are not avilable");
+                printf("ports from 4840 to 4850 are not available");
                 break;
             }
         }
