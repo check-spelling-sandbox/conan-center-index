@@ -81,18 +81,18 @@ class HdrhistogramcConan(ConanFile):
             self.cpp_info.set_property("pkg_config_name", "hdr_histogram")
 
         # TODO: back to global scope in conan v2 once cmake_find_package_* generators removed
-        self.cpp_info.components["hdr_histrogram"].libs = collect_libs(self)
-        self.cpp_info.components["hdr_histrogram"].includedirs.append(os.path.join("include", "hdr"))
+        self.cpp_info.components["hdr_histogram"].libs = collect_libs(self)
+        self.cpp_info.components["hdr_histogram"].includedirs.append(os.path.join("include", "hdr"))
         if not self.options.shared:
             if self.settings.os in ["Linux", "FreeBSD"]:
-                self.cpp_info.components["hdr_histrogram"].system_libs = ["m", "rt", "pthread"]
+                self.cpp_info.components["hdr_histogram"].system_libs = ["m", "rt", "pthread"]
             elif self.settings.os == "Windows":
-                self.cpp_info.components["hdr_histrogram"].system_libs = ["ws2_32"]
+                self.cpp_info.components["hdr_histogram"].system_libs = ["ws2_32"]
 
         # TODO: to remove in conan v2 once cmake_find_package_* generators removed
         self.cpp_info.names["cmake_find_package"] = "hdr_histogram"
         self.cpp_info.names["cmake_find_package_multi"] = "hdr_histogram"
-        self.cpp_info.components["hdr_histrogram"].names["cmake_find_package"] = target
-        self.cpp_info.components["hdr_histrogram"].names["cmake_find_package_multi"] = target
-        self.cpp_info.components["hdr_histrogram"].set_property("cmake_target_name", f"hdr_histogram::{target}")
-        self.cpp_info.components["hdr_histrogram"].requires = ["zlib::zlib"]
+        self.cpp_info.components["hdr_histogram"].names["cmake_find_package"] = target
+        self.cpp_info.components["hdr_histogram"].names["cmake_find_package_multi"] = target
+        self.cpp_info.components["hdr_histogram"].set_property("cmake_target_name", f"hdr_histogram::{target}")
+        self.cpp_info.components["hdr_histogram"].requires = ["zlib::zlib"]
