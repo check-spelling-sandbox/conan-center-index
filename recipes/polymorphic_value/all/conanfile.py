@@ -10,7 +10,7 @@ from conan.tools.scm import Version
 required_conan_version = ">=1.50.0"
 
 
-class PolymorphictValueConan(ConanFile):
+class PolymorphicValueConan(ConanFile):
     name = "polymorphic_value"
     homepage = "https://github.com/jbcoe/polymorphic_value"
     description = "Production-quality reference implementation of P0201r2: A polymorphic value-type for C++"
