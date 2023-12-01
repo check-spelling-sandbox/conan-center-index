@@ -58,7 +58,7 @@ class AcadoConan(ConanFile):
         if self.settings.compiler == "apple-clang":
             raise ConanInvalidConfiguration("apple-clang not supported")
         if self.settings.compiler == "clang" and self.settings.compiler.version == "9":
-            raise ConanInvalidConfiguration("acado can not be built by Clang 9.")
+            raise ConanInvalidConfiguration("acado cannot be built by Clang 9.")
         if conan_version.major < 2 and self.settings.compiler in ["clang", "gcc"] and self.settings.compiler.libcxx != "libstdc++11":
             raise ConanInvalidConfiguration("libstdc++11 required")
 

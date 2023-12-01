@@ -72,7 +72,7 @@ class PackageConan(ConanFile):
 
         # In case this library does not work in some another configuration, it should be validated here too
         if self.settings.os == "Windows":
-            raise ConanInvalidConfiguration(f"{self.ref} can not be used on Windows.")
+            raise ConanInvalidConfiguration(f"{self.ref} cannot be used on Windows.")
 
     def source(self):
         # Download source package and extract to source folder

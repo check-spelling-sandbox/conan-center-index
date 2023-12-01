@@ -51,7 +51,7 @@ class PoptConan(ConanFile):
 
     def validate(self):
         if is_msvc(self) and self.options.shared:
-            raise ConanInvalidConfiguration(f"{self.ref} can not be built as shared on Visual Studio and msvc.")
+            raise ConanInvalidConfiguration(f"{self.ref} cannot be built as shared on Visual Studio and msvc.")
 
     def build_requirements(self):
         self.tool_requires("gnu-config/cci.20210814")

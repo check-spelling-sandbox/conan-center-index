@@ -67,7 +67,7 @@ class XtensorConan(ConanFile):
     def validate(self):
         if self.options.tbb and self.options.openmp:
             raise ConanInvalidConfiguration(
-                "The options 'tbb' and 'openmp' can not be used together."
+                "The options 'tbb' and 'openmp' cannot be used together."
             )
 
         if self.settings.compiler.get_safe("cppstd"):

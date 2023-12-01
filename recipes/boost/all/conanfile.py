@@ -455,7 +455,7 @@ class BoostConan(ConanFile):
                     raise ConanInvalidConfiguration(f"Boost '{lib}' library requires multi threading")
 
         if is_msvc(self) and self._shared and is_msvc_static_runtime(self):
-            raise ConanInvalidConfiguration("Boost can not be built as shared library with MT runtime.")
+            raise ConanInvalidConfiguration("Boost cannot be built as shared library with MT runtime.")
 
         if not self.options.without_locale and self.options.i18n_backend_iconv == "off" and \
            not self.options.i18n_backend_icu and not self._is_windows_platform:

@@ -53,7 +53,7 @@ class TeemoConan(ConanFile):
         if self.info.settings.compiler.cppstd:
             check_min_cppstd(self, self._min_cppstd)
         if self.info.settings.compiler == "apple-clang" and Version(self.info.settings.compiler.version) < "12.0":
-            raise ConanInvalidConfiguration(f"{self.ref} can not build on apple-clang < 12.0.") 
+            raise ConanInvalidConfiguration(f"{self.ref} cannot build on apple-clang < 12.0.") 
 
     def source(self):
         get(self, **self.conan_data["sources"][self.version], destination=self.source_folder, strip_root=True)

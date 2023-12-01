@@ -44,7 +44,7 @@ If the pull request modifies anything else, the label won't be assigned, we need
 
 Label [`c3i-conan2-ready`](https://github.com/conan-io/conan-center-index/pulls?q=is%3Aopen+is%3Apr+label%3A%22c3i-conan2-ready%22)
 is assigned by the bot to pull-requests that are just adding a new package references which passed by Conan v2 and are not listed in `.c3i/conan_v2_ready_references.yml`.
-This is a regression test, in case package is working with Conan v2, it can not be merged in a future pull request in case of failure.
+This is a regression test, in case package is working with Conan v2, it cannot be merged in a future pull request in case of failure.
 
 > These pull-requests will be merged right away without requiring any approval (CI and CLA checks must have passed).
 

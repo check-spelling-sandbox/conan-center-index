@@ -72,7 +72,7 @@ class SeadexEssentialsConan(ConanFile):
                     f"{self.ref} requires at least {self.settings.compiler} {minimum_version}."
                 )
         if is_msvc(self) and self.options.shared:
-            raise ConanInvalidConfiguration(f"{self.ref} can not be built as shared on Visual Studio and msvc.")
+            raise ConanInvalidConfiguration(f"{self.ref} cannot be built as shared on Visual Studio and msvc.")
         if not self.dependencies["spdlog"].options.header_only:
             raise ConanInvalidConfiguration("Spdlog must be header only!")
 

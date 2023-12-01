@@ -26,7 +26,7 @@ class KcovConan(ConanFile):
     def configure(self):
         if self.settings.os == "Windows":
             raise ConanInvalidConfiguration(
-                "kcov can not be built on windows.")
+                "kcov cannot be built on windows.")
 
     def source(self):
         tools.get(**self.conan_data["sources"][self.version])

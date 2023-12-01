@@ -262,7 +262,7 @@ See [Removing older versions](adding_packages/sources_and_patches.md#removing-ol
 
 ## Can I install packages from the system package manager?
 
-It depends. You can not mix both regular projects with system packages, but you can provide package wrappers for system packages. However, Conan can not track system packages, like their version and options, which creates a fragile situation where affects libraries and binaries built in your package but can not be totally reproduced.
+It depends. You cannot mix both regular projects with system packages, but you can provide package wrappers for system packages. However, Conan cannot track system packages, like their version and options, which creates a fragile situation where affects libraries and binaries built in your package but cannot be totally reproduced.
 Also, system package managers require administrator permission to install packages, which is not always possible and may break limited users. Moreover, more than one Conan package may require the same system package and there is no way to track their mutual usage.
 
 The hook [KB-H032](error_knowledge_base.md#KB-H032) blocks `system_requirement` and `SystemPackageTool` in recipes, to avoid mixing both regular projects with
@@ -454,7 +454,7 @@ Doing so requires [deleting the option from the `package_id`](adding_packages/co
 ## Can I use full_package_mode for a requirement in my recipe?
 
 For some irregular projects, they may need to be aligned when being used as a requirement, using the very same version, options, and settings and maybe not mixing shared with static linkage.
-Those projects usually break between patch versions and are very sensitive, so we can not use different versions through Conan graph dependencies,
+Those projects usually break between patch versions and are very sensitive, so we cannot use different versions through Conan graph dependencies,
 otherwise, it may result in unexpected behavior or even runtime errors.
 
 A very known project is GLib, which requires the very same configuration to prevent multiple instances when using static linkage.

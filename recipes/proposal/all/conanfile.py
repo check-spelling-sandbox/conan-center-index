@@ -70,7 +70,7 @@ class PROPOSALConan(ConanFile):
     def validate(self):
         if is_msvc(self) and self.options.shared:
             raise ConanInvalidConfiguration(
-                "Can not build shared library on Visual Studio."
+                "Cannot build shared library on Visual Studio."
             )
         if self.settings.compiler.get_safe("cppstd"):
             check_min_cppstd(self, self._min_cppstd)

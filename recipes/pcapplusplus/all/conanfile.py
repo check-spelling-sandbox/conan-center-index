@@ -53,7 +53,7 @@ class PcapplusplusConan(ConanFile):
 
     def validate(self):
         if self.settings.os == "Windows" and not is_msvc(self):
-            raise ConanInvalidConfiguration("Can not build on Windows: only msvc compiler is supported.")
+            raise ConanInvalidConfiguration("Cannot build on Windows: only msvc compiler is supported.")
         if self.settings.os not in ("FreeBSD", "Linux", "Macos", "Windows"):
             raise ConanInvalidConfiguration(f"{self.settings.os} is not supported")
 

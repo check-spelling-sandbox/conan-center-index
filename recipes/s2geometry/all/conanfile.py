@@ -72,7 +72,7 @@ class S2GeometryConan(ConanFile):
             )
 
         if is_msvc(self) and self.options.shared:
-            raise ConanInvalidConfiguration(f"{self.ref} can not be built as shared with Visual Studio")
+            raise ConanInvalidConfiguration(f"{self.ref} cannot be built as shared with Visual Studio")
 
     def source(self):
         get(self, **self.conan_data["sources"][self.version], strip_root=True)
