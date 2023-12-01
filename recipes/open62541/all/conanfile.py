@@ -59,7 +59,7 @@ class Open62541Conan(ConanFile):
         "multithreading": ["None", "Threadsafe", "Internal threads"],
         # False: UA_ENABLE_IMMUTABLE_NODES=Off
         # True: UA_ENABLE_IMMUTABLE_NODES=On
-        "imutable_nodes": [True, False],
+        "immutable_nodes": [True, False],
         # False: UA_ENABLE_WEBSOCKET_SERVER=Off
         # True: UA_ENABLE_WEBSOCKET_SERVER=On
         "web_socket": [True, False],
@@ -120,7 +120,7 @@ class Open62541Conan(ConanFile):
         "dynamic_nodes": True,
         "single_header": False,
         "multithreading": "None",
-        "imutable_nodes": False,
+        "immutable_nodes": False,
         "web_socket": False,
         "discovery": "semaphore",
         "discovery_semaphore": True,
@@ -293,7 +293,7 @@ class Open62541Conan(ConanFile):
         if version >= "1.1.3":
             tc.variables["UA_MULTITHREADING"] = self._get_multithreading_option()
 
-        tc.variables["UA_ENABLE_IMMUTABLE_NODES"] = self.options.imutable_nodes
+        tc.variables["UA_ENABLE_IMMUTABLE_NODES"] = self.options.immutable_nodes
         tc.variables["UA_ENABLE_WEBSOCKET_SERVER"] = self.options.web_socket
         tc.variables["UA_ENABLE_HISTORIZING"] = self.options.historize != False
 
