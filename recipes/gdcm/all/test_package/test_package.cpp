@@ -57,7 +57,7 @@ int main(int argc, char* argv[])
   const char* filename = argv[1];
   const char* outfilename = argv[2];
 
-  // Instanciate the reader:
+  // Instantiate the reader:
   gdcm::Reader reader;
   reader.SetFileName(filename);
   if (!reader.Read())
