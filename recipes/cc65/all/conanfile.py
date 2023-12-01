@@ -145,19 +145,19 @@ class Cc65Conan(ConanFile):
         self.output.info("Appending PATH environment variable: %s" % bindir)
         self.env_info.PATH.append(bindir)
 
-        self.output.info("Seting CC65_HOME environment variable: %s" % self._datadir)
+        self.output.info("Setting CC65_HOME environment variable: %s" % self._datadir)
         self.env_info.CC65_HOME = self._datadir
 
         bin_ext = ".exe" if self.settings.os == "Windows" else ""
 
         cc65_cc = os.path.join(bindir, "cc65" + bin_ext)
-        self.output.info("Seting CC65 environment variable: {}".format(cc65_cc))
+        self.output.info("Setting CC65 environment variable: {}".format(cc65_cc))
         self.env_info.CC65 = cc65_cc
 
         cc65_as = os.path.join(bindir, "ca65" + bin_ext)
-        self.output.info("Seting AS65 environment variable: {}".format(cc65_as))
+        self.output.info("Setting AS65 environment variable: {}".format(cc65_as))
         self.env_info.AS65 = cc65_as
 
         cc65_ld = os.path.join(bindir, "cl65" + bin_ext)
-        self.output.info("Seting LD65 environment variable: {}".format(cc65_ld))
+        self.output.info("Setting LD65 environment variable: {}".format(cc65_ld))
         self.env_info.LD65 = cc65_ld
