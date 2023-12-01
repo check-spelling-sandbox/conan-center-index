@@ -1525,7 +1525,7 @@ class BoostConan(ConanFile):
             # This define is already imported into all of the _libboost libraries from this recipe anyway,
             # so it would be better to be consistent and ensure ANYTHING using boost (headers or libs) has consistent #defines.
 
-            # Same applies for for BOOST_AUTO_LINK_{layout}:
+            # Same applies for BOOST_AUTO_LINK_{layout}:
             # consumer libs that use headers also need to know what is the layout/filename of the libraries.
             #
             # eg, if using the "tagged" naming scheme, and a header triggers an autolink,
