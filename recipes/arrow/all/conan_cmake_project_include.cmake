@@ -7,7 +7,7 @@ if(ARROW_S3)
   endif()
 
   # Causes logic used for generated .pc file to not run
-  # avoiding instropection of target `aws-cpp-sdk::aws-cpp-sdk`
+  # avoiding introspection of target `aws-cpp-sdk::aws-cpp-sdk`
   # This is fine because the generated .pc file is not of use
   set(AWSSDK_SOURCE "conan")
 endif()
