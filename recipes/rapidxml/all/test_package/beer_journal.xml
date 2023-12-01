@@ -12,7 +12,7 @@
     </Brewery>
     <Brewery name="Bells Brewery" location="Kalamazoo, MI">
         <Beer name="Two Hearted Ale" description="IPA" rating="A" dateSampled="03/15/2012">
-            Another execllent brew. Two Hearted gives Founders Centennial a run for it's money.
+            Another excellent brew. Two Hearted gives Founders Centennial a run for it's money.
         </Beer>
     </Brewery>
 </MyBeerJournal>
