@@ -26,7 +26,7 @@ class LibmicrohttpdConan(ConanFile):
         "with_https": [True, False],
         "with_error_messages": [True, False],
         "with_postprocessor": [True, False],
-        "with_digest_authentification": [True, False],
+        "with_digest_authentication": [True, False],
         "epoll": [True, False],
         "with_zlib": [True, False],
     }
@@ -36,7 +36,7 @@ class LibmicrohttpdConan(ConanFile):
         "with_https": False,  # FIXME: should be True, but gnutls is not yet available in cci
         "with_error_messages": True,
         "with_postprocessor": True,
-        "with_digest_authentification": True,
+        "with_digest_authentication": True,
         "epoll": True,
         "with_zlib": True,
     }
@@ -57,7 +57,7 @@ class LibmicrohttpdConan(ConanFile):
             del self.options.with_https
             del self.options.with_error_messages
             del self.options.with_postprocessor
-            del self.options.with_digest_authentification
+            del self.options.with_digest_authentication
             del self.options.with_zlib
 
     def configure(self):
@@ -106,7 +106,7 @@ class LibmicrohttpdConan(ConanFile):
                 f"--enable-https={yes_no(self.options.with_https)}",
                 f"--enable-messages={yes_no(self.options.with_error_messages)}",
                 f"--enable-postprocessor={yes_no(self.options.with_postprocessor)}",
-                f"--enable-dauth={yes_no(self.options.with_digest_authentification)}",
+                f"--enable-dauth={yes_no(self.options.with_digest_authentication)}",
                 f"--enable-epoll={yes_no(self.options.get_safe('epoll'))}",
                 "--disable-doc",
                 "--disable-examples",
