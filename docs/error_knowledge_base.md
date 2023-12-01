@@ -325,7 +325,7 @@ By default, all packages should be built as static library (the option ``shared`
 
 #### **<a name="KB-H051">#KB-H051</a>: "DEFAULT OPTIONS AS DICTIONARY"**
 
-The attribue [default_options](https://docs.conan.io/1/reference/conanfile/attributes.html#default-options) should be a dictionary, for example `default_options = {'shared': False, 'fPIC': True}`.
+The attribute [default_options](https://docs.conan.io/1/reference/conanfile/attributes.html#default-options) should be a dictionary, for example `default_options = {'shared': False, 'fPIC': True}`.
 
 #### **<a name="KB-H052">#KB-H052</a>: "CONFIG.YML HAS NEW VERSION"**
 
