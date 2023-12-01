@@ -171,7 +171,7 @@ class DCMTKConan(ConanFile):
           - CMAKE_REQUIRED_LIBRARIES
         These variables are listened by CMake functions like check_symbol_exists() etc
         """
-        # Aggregate cpp_info of dependency and all its depencencies (direct and transitive)
+        # Aggregate cpp_info of dependency and all its dependencies (direct and transitive)
         dep = self.dependencies.host[host_dependency]
         dep_cpp_info = dep.cpp_info.aggregated_components()
         for _, trans_dep in dep.dependencies.items():

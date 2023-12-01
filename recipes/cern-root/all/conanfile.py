@@ -241,7 +241,7 @@ class CernRootConan(ConanFile):
             # COMPILE_DEFINITIONS property is not propagated causing the build to
             # fail on some systems if libcxx != libstdc++11
             "clad": False,
-            # Tell CMake where to look for Conan provided depedencies
+            # Tell CMake where to look for Conan provided dependencies
             "CMAKE_LIBRARY_PATH": cmakelibpath.replace("\\", "/"),
             "CMAKE_INCLUDE_PATH": cmakeincludepath.replace("\\", "/"),
             # Configure install directories

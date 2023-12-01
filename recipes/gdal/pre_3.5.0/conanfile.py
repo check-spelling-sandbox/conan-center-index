@@ -726,7 +726,7 @@ class GdalConan(ConanFile):
             tc.configure_args.append("--without-local")
             # Threadsafe
             tc.configure_args.append("--with-threads={}".format(yes_no(self.options.threadsafe)))
-            # Depencencies:
+            # Dependencies:
             tc.configure_args.append("--with-proj=yes") # always required !
             tc.configure_args.append("--with-libz={}".format(yes_no(self.options.with_zlib)))
             if self._has_with_libdeflate_option:
