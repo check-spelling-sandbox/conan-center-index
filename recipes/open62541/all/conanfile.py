@@ -196,7 +196,7 @@ class Open62541Conan(ConanFile):
         if not self.options.discovery:
             if self.options.discovery_semaphore:
                 raise ConanInvalidConfiguration(
-                    "Open62541 discovery sempahore option requires discovery option to be enabled")
+                    "Open62541 discovery semaphore option requires discovery option to be enabled")
 
         if Version(self.version) < "1.1.0":
             if self.options.encryption == "openssl":
