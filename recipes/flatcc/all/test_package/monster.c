@@ -40,7 +40,7 @@ int create_monster_bottom_up(flatcc_builder_t *B, int flexible)
     //
     // In the C-API, verbs (here create) always follow the type name
     // (here Weapon), prefixed by the namespace (here MyGame_Sample_):
-    // MyGame_Sample_Weapon_create(...), or ns(Weapone_create(...)).
+    // MyGame_Sample_Weapon_create(...), or ns(Weapon_create(...)).
     ns(Weapon_ref_t) sword = ns(Weapon_create(B, weapon_one_name, weapon_one_damage));
     ns(Weapon_ref_t) axe = ns(Weapon_create(B, weapon_two_name, weapon_two_damage));
 
