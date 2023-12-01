@@ -181,7 +181,7 @@ Usage of each option should follow the rules:
 
 ### Options to Avoid
 
-* `build_testing` should not be added, nor any other related unit test option. Options affect the package ID, therefore, testing should not be part of that.
+* `build_testing` and any other related unit test option should not be added. Options affect the package ID, therefore, testing should not be part of that.
    Instead, use Conan config [skip_test](https://docs.conan.io/1/reference/config_files/global_conf.html#tools-configurations) feature:
 
    ```python
