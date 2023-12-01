@@ -356,7 +356,7 @@
 - [feature] Updated CMake version to 3.20 only in macOS machines.
 - [feature] Collect requirements from test_package as well.
 - [feature] Make the conan-center-bot write a comment after merging a `Bump version` or `Bump dependencies` labeled pull request.
-- [feature] Allow SecheduledExportCheck job to report in any issue.
+- [feature] Allow ScheduledExportCheck job to report in any issue.
 - [feature] DSL: Add cron triggers to some jobs.
 - [feature] DSL: Disable concurrent builds on some jobs.
 - [feature] Adapt paths for Ansible machines.
