@@ -8,7 +8,7 @@ import os
 
 required_conan_version = ">=1.52.0"
 
-class CSVMONEKYConan(ConanFile):
+class CSVMONKEYConan(ConanFile):
     name = "csvmonkey"
     description = "Header-only vectorized, lazy-decoding, zero-copy CSV file parser"
     license = "BSD-3-Clause"
