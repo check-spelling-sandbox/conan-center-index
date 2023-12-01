@@ -50,7 +50,7 @@ message AddressBook {
 }
 // [END messages]
 
-// Artibrary message with a GID type, to cause 
+// Arbitrary message with a GID type, to cause 
 // the .pb.h file to define `GID_MAX`, which
 // may conflict with a macro defined by system
 // headers on macOS.
