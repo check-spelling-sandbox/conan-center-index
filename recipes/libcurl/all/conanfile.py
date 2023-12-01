@@ -536,7 +536,7 @@ class LibcurlConan(ConanFile):
                 arch = "arm-linux-gnueabi"
         return arch
 
-    # TODO, this should be a inner fuction of _get_linux_arm_host since it is only used from there
+    # TODO, this should be a inner function of _get_linux_arm_host since it is only used from there
     # it should not polute the class namespace, since there are iOS and Android arm architectures also
     def _arm_version(self, arch):
         version = None
