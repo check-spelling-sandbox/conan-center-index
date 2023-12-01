@@ -66,7 +66,7 @@ class MpdecimalConan(ConanFile):
         if is_msvc(self):
             self.tool_requires("automake/1.16.4")
         else:
-            # required to suppport windows as a build machine
+            # required to support windows as a build machine
             if self._settings_build.os == "Windows":
                 self.win_bash = True
                 if not self.conf.get("tools.microsoft.bash:path", check_type=str):

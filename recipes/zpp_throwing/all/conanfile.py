@@ -42,7 +42,7 @@ class ZppThrowingConan(ConanFile):
         self.info.clear()
 
     def validate(self):
-        # TODO: currently msvc isn't suppported
+        # TODO: currently msvc isn't supported
         # see https://github.com/eyalz800/zpp_throwing/issues/7
         if is_msvc(self):
             raise ConanInvalidConfiguration(f"{self.ref} doesn't support MSVC (yet). See https://github.com/eyalz800/zpp_throwing/issues/7")

@@ -4,7 +4,7 @@ from conans import ConanFile, CMake, tools
 from conans.errors import ConanInvalidConfiguration
 
 
-class DjinniSuppotLib(ConanFile):
+class DjinniSupportLib(ConanFile):
     name = "djinni-support-lib"
     homepage = "https://djinni.xlcpp.dev"
     url = "https://github.com/conan-io/conan-center-index"

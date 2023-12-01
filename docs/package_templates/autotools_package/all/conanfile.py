@@ -106,7 +106,7 @@ class PackageConan(ConanFile):
         # only if upstream configure.ac relies on PKG_CHECK_MODULES macro
         if not self.conf.get("tools.gnu:pkg_config", check_type=str):
             self.tool_requires("pkgconf/x.y.z")
-        # required to suppport windows as a build machine
+        # required to support windows as a build machine
         if self._settings_build.os == "Windows":
             self.win_bash = True
             if not self.conf.get("tools.microsoft.bash:path", check_type=str):

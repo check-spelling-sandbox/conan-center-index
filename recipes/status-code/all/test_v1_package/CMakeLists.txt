@@ -4,7 +4,7 @@ project(test_package LANGUAGES CXX)
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup(TARGETS)
 
-# Just a workaround to not supprt the deprecated generators while passing the 1.x hooks
+# Just a workaround to not support the deprecated generators while passing the 1.x hooks
 find_package(status-code CONFIG REQUIRED)
 add_library(status-code::hl ALIAS status-code::status-code)
 

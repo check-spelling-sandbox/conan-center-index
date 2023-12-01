@@ -62,7 +62,7 @@ class LibxlsxwriterConan(ConanFile):
 
     def validate(self):
         if Version(self.version) < "1.0.6" and self.info.options.md5 == "openssl":
-            raise ConanInvalidConfiguration(f"{self.name}:md5=openssl is not suppported in {self.ref}")
+            raise ConanInvalidConfiguration(f"{self.name}:md5=openssl is not supported in {self.ref}")
 
     def source(self):
         get(self, **self.conan_data["sources"][self.version],

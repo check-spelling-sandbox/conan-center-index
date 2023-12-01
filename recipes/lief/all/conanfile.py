@@ -84,7 +84,7 @@ class LiefConan(ConanFile):
             self.requires("rang/3.2")
         else:
             self.requires("utfcpp/3.2.3")
-            # lief doesn't supprot spdlog/1.11.0 with fmt/9.x yet.
+            # lief doesn't support spdlog/1.11.0 with fmt/9.x yet.
             self.requires("spdlog/1.10.0")
             self.requires("boost/1.81.0", transitive_headers=True)
             self.requires("tcb-span/cci.20220616", transitive_headers=True)
