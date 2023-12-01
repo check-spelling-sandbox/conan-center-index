@@ -219,14 +219,14 @@ class QtConan(ConanFile):
                     _enablemodule(req)
 
         # enable all modules which are
-        # - required by a module explicitely enabled by the consumer
+        # - required by a module explicitly enabled by the consumer
         for module in self._get_module_tree:
             if getattr(self.options, module):
                 _enablemodule(module)
 
         # disable all modules which are:
-        # - not explicitely enabled by the consumer and
-        # - not required by a module explicitely enabled by the consumer
+        # - not explicitly enabled by the consumer and
+        # - not required by a module explicitly enabled by the consumer
         for module in self._get_module_tree:
             if getattr(self.options, module).value is None:
                 setattr(self.options, module, False)
