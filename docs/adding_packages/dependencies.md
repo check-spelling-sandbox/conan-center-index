@@ -54,7 +54,7 @@ class ExampleConan(ConanFile):
 ```
 
 If a dependency was added (or removed) with a release, then the `if` condition could check [`self.version`](https://docs.conan.io/1/reference/conanfile/attributes.html#version). Another common case is
-`self.settings.os` dependent requirements which need to be added for certain plaforms.
+`self.settings.os` dependent requirements which need to be added for certain platforms.
 
 ### Build Requirements
 
