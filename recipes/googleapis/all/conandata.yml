@@ -1,4 +1,4 @@
-# Source code for googleapis is vendorized in (at least) two other libreries: grpc and google-cloud-cpp,
+# Source code for googleapis is vendorized in (at least) two other libraries: grpc and google-cloud-cpp,
 # these libraries use an specific commit from googleapis repository.
 #
 # - google-cloud-cpp: https://github.com/googleapis/google-cloud-cpp/blob/main/cmake/GoogleapisConfig.cmake
