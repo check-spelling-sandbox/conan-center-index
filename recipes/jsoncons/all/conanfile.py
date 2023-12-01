@@ -22,7 +22,7 @@ class JsonconsConan(ConanFile):
         "csv-reader", "jsonschema", "json-construction", "streaming-json-read",
         "header-only",
     )
-    pckage_type = "header-library"
+    package_type = "header-library"
     settings = "os", "arch", "compiler", "build_type"
     no_copy_source = True
 

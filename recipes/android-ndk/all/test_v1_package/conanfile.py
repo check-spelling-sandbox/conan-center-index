@@ -4,7 +4,7 @@ from conans import CMake
 from conan.tools.build import cross_building
 
 
-class TestPackgeConan(ConanFile):
+class TestPackageConan(ConanFile):
     settings = "os", "arch", "compiler", "build_type"
     test_type = "explicit"
     generators = "cmake", "cmake_find_package_multi"

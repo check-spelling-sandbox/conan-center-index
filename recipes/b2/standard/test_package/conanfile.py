@@ -2,7 +2,7 @@ from conans import ConanFile, tools
 import os
 
 
-class TestPackgeConan(ConanFile):
+class TestPackageConan(ConanFile):
     settings = "os", "arch"
 
     def test(self):

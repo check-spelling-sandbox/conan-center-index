@@ -36,7 +36,7 @@ This is the canonical structure of one of these folders, where the same `conanfi
 |           +-- test_package/
 |               +-- conanfile.py
 |               +-- CMakeLists.txt
-|               +-- test_pacakge.cpp
+|               +-- test_package.cpp
 ```
 
 If it becomes too complex to maintain the logic for all the versions in a single `conanfile.py`, it is possible to split the folder `all/` into
