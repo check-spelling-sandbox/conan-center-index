@@ -139,7 +139,7 @@ See also: [Why are CMake find/config files and pkg-config files not packaged?](f
 
 #### **<a name="KB-H017">#KB-H017</a>: "PDB FILES NOT ALLOWED"**
 
-Because of the big size of the [PDB](https://github.com/Microsoft/microsoft-pdb) files (Program Databse, a debug information format) and the issues using them changing the original folders, the PDB files are not allowed to be packaged.
+Because of the big size of the [PDB](https://github.com/Microsoft/microsoft-pdb) files (Program Database, a debug information format) and the issues using them changing the original folders, the PDB files are not allowed to be packaged.
 
 See also: [Why PDB files are not allowed?](faqs.md#why-pdb-files-are-not-allowed).
 
