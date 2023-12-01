@@ -8,7 +8,7 @@ from conan.tools.microsoft import is_msvc, msvc_runtime_flag
 required_conan_version = ">=1.53.0"
 
 
-class EazylzmaConan(ConanFile):
+class EasylzmaConan(ConanFile):
     name = "easylzma"
     description = (
         "An easy to use, tiny, public domain, C wrapper library around "
