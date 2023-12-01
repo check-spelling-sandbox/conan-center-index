@@ -43,7 +43,7 @@ class LibgcryptConan(ConanFile):
 
     def validate(self):
         if self.settings.os != "Linux":
-            raise ConanInvalidConfiguration("This recipe only support Linux. You can contribute Windows and/or Macos support.")
+            raise ConanInvalidConfiguration("This recipe only support Linux. You can contribute Windows and/or macOS support.")
 
     def source(self):
         get(self, **self.conan_data["sources"][self.version], strip_root=True)

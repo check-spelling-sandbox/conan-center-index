@@ -53,7 +53,7 @@ class CclientConan(ConanFile):
         # FIXME: need krb5 recipe
         if self.settings.os == "Macos":
             raise ConanInvalidConfiguration(
-                "c-client depends on krb5 on MacOS and it's not packaged by "
+                "c-client depends on krb5 on macOS and it's not packaged by "
                 "Conan yet"
             )
 

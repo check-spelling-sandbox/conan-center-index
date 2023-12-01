@@ -114,7 +114,7 @@ class FollyConan(ConanFile):
             raise ConanInvalidConfiguration("Conan support for non-Linux platforms starts with Folly version 2022.01.31.00")
 
         if self.settings.os == "Macos" and self.settings.arch != "x86_64":
-            raise ConanInvalidConfiguration("Conan currently requires a 64bit target architecture for Folly on Macos")
+            raise ConanInvalidConfiguration("Conan currently requires a 64bit target architecture for Folly on macOS")
 
         if self.settings.os == "Windows" and self.settings.arch != "x86_64":
             raise ConanInvalidConfiguration("Folly requires a 64bit target architecture on Windows")

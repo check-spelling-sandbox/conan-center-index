@@ -13,7 +13,7 @@ required_conan_version = ">=1.55.0"
 
 class VulkanLoaderConan(ConanFile):
     name = "vulkan-loader"
-    description = "Khronos official Vulkan ICD desktop loader for Windows, Linux, and MacOS."
+    description = "Khronos official Vulkan ICD desktop loader for Windows, Linux, and macOS."
     topics = ("vulkan", "loader", "desktop", "gpu")
     homepage = "https://github.com/KhronosGroup/Vulkan-Loader"
     url = "https://github.com/conan-io/conan-center-index"

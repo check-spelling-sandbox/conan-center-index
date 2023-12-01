@@ -87,7 +87,7 @@ class FlatbuffersConan(ConanFile):
         tc.cache_variables["VERSION_COMMIT"] = str(version.pre or "0")
         # For msvc shared
         tc.variables["CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS"] = True
-        # Relocatable shared libs on Macos
+        # Relocatable shared libs on macOS
         tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
         # Fix iOS/tvOS/watchOS
         if is_apple_os(self):

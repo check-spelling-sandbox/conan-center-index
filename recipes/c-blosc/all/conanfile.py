@@ -90,7 +90,7 @@ class CbloscConan(ConanFile):
         tc.variables["PREFER_EXTERNAL_ZLIB"] = True
         tc.variables["PREFER_EXTERNAL_ZSTD"] = True
         tc.variables["CMAKE_INSTALL_SYSTEM_RUNTIME_LIBS_SKIP"] = True
-        # Generate a relocatable shared lib on Macos
+        # Generate a relocatable shared lib on macOS
         tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
         tc.generate()
 

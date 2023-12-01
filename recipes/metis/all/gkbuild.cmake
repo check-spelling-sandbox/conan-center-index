@@ -50,7 +50,7 @@ if(${CMAKE_C_COMPILER_ID} STREQUAL "Intel")
   #  set(GK_COPTIONS "${GK_COPTIONS} -fast")
 endif()
 
-# Add support for MacOS items
+# Add support for macOS items
 if(APPLE)
   set(GK_COPTIONS "${GK_COPTIONS} -DMACOS")
 endif()

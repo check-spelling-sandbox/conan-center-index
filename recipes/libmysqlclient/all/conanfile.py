@@ -90,7 +90,7 @@ class LibMysqlClientCConan(ConanFile):
         if minimum_version and loose_lt_semver(str(self.settings.compiler.version), minimum_version):
             raise ConanInvalidConfiguration(f"{self.ref} requires {self.settings.compiler} {minimum_version} or newer")
 
-        # Sice 8.0.17 this doesn't support shared library on MacOS.
+        # Sice 8.0.17 this doesn't support shared library on macOS.
         # https://github.com/mysql/mysql-server/blob/mysql-8.0.17/cmake/libutils.cmake#L333-L335
         if self.settings.compiler == "apple-clang" and self.options.shared:
             raise ConanInvalidConfiguration(f"{self.ref} doesn't support shared library")

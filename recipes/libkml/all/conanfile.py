@@ -58,7 +58,7 @@ class LibkmlConan(ConanFile):
     def generate(self):
         tc = CMakeToolchain(self)
         tc.variables["CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS"] = True
-        # To install relocatable shared libs on Macos
+        # To install relocatable shared libs on macOS
         tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
         tc.generate()
         deps = CMakeDeps(self)

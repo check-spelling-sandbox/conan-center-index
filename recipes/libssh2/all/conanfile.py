@@ -57,7 +57,7 @@ class Libssh2Conan(ConanFile):
         tc.cache_variables['BUILD_TESTING'] = not self.conf.get("tools.build:skip_test", default=True, check_type=bool)
         tc.cache_variables["BUILD_STATIC_LIBS"] = not self.options.shared
         tc.cache_variables["BUILD_SHARED_LIBS"] = self.options.shared
-        # To install relocatable shared lib on Macos by default
+        # To install relocatable shared lib on macOS by default
         tc.variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
         # Workaround until github.com/conan-io/conan/pull/12600 is merged
         if is_msvc(self):

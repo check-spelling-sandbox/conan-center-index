@@ -106,7 +106,7 @@ class PCREConan(ConanFile):
         tc.variables["PCRE_NO_RECURSE"] = not self.options.with_stack_for_recursion
         if is_msvc(self):
             tc.variables["PCRE_STATIC_RUNTIME"] = is_msvc_static_runtime(self)
-        # Relocatable shared lib on Macos
+        # Relocatable shared lib on macOS
         tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
         # Honor BUILD_SHARED_LIBS since upstream CMakeLists overrides it as a CACHE variable.
         # Issue quite similar to https://github.com/conan-io/conan/issues/11840

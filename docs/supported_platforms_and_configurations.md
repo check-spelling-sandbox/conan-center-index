@@ -7,7 +7,7 @@
     * [Build Images](#build-images)
   * [Windows](#windows)
   * [Linux](#linux)
-  * [MacOS](#macos)<!-- endToc -->
+  * [macOS](#macos)<!-- endToc -->
 
 ## Introduction
 
@@ -72,13 +72,13 @@ For more information see [conan-io/conan-docker-tools](https://github.com/conan-
   - Shared, Static (option `"shared": [True, False]` in the recipe when available)
   - Header Only (option `"header_only": [True, False]` is only added with the value True)
 
-## MacOS
+## macOS
 
 - Python: 3.7.12
 - CMake: 3.20.1
 - Compilers: Apple-clang versions 11.0.3, 12.0.5, 13.0.0
-- Macos SDK versions (for each apple-clang version respectively): 10.15, 11.3
-- Macos deployment target (`minos`): 10.15, 11.0, 11.3
+- macOS SDK versions (for each apple-clang version respectively): 10.15, 11.3
+- macOS deployment target (`minos`): 10.15, 11.0, 11.3
 - C++ Standard Library (`libcxx`): `libc++`
 - Architectures: x86_64, armv8
 - Build types: Release, Debug

@@ -28,7 +28,7 @@ class CreateDmgConan(ConanFile):
 
     def validate(self):
         if self.settings.os != "Macos":
-            raise ConanInvalidConfiguration(f"{self.name} works only on MacOS")
+            raise ConanInvalidConfiguration(f"{self.name} works only on macOS")
 
     def source(self):
         get(self, **self.conan_data["sources"][self.version], strip_root=True)

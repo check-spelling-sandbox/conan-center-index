@@ -4,7 +4,7 @@ project(MoltenVK)
 if(NOT (CMAKE_SYSTEM_NAME STREQUAL "Darwin" OR
         CMAKE_SYSTEM_NAME STREQUAL "iOS" OR
         CMAKE_SYSTEM_NAME STREQUAL "tvOS"))
-    message(FATAL_ERROR "MoltenVK only supports MacOS, iOS and tvOS")
+    message(FATAL_ERROR "MoltenVK only supports macOS, iOS and tvOS")
 endif()
 
 option(MVK_WITH_SPIRV_TOOLS "Build MoltenVK without the MVK_EXCLUDE_SPIRV_TOOLS build setting" ON)

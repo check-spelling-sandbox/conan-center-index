@@ -101,7 +101,7 @@ class FontconfigConan(ConanFile):
             "Version: {}".format(self.dependencies["freetype"].ref.version),
             "Version: {}".format(self.dependencies["freetype"].conf_info.get("user.freetype:libtool_version")),
         )
-        # disable fc-cache test to enable cross compilation but also builds with shared libraries on MacOS
+        # disable fc-cache test to enable cross compilation but also builds with shared libraries on macOS
         replace_in_file(self,
             os.path.join(self.source_folder, "Makefile.in"),
             "@CROSS_COMPILING_TRUE@RUN_FC_CACHE_TEST = false",

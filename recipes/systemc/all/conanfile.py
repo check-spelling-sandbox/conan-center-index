@@ -63,7 +63,7 @@ class SystemcConan(ConanFile):
 
     def validate(self):
         if is_apple_os(self):
-            raise ConanInvalidConfiguration("Macos build not supported")
+            raise ConanInvalidConfiguration("macOS build not supported")
 
         if self.settings.os == "Windows" and self.options.shared:
             raise ConanInvalidConfiguration(

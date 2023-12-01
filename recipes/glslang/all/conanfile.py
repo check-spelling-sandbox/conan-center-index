@@ -119,7 +119,7 @@ class GlslangConan(ConanFile):
         if is_apple_os(self):
             tc.variables["CMAKE_MACOSX_BUNDLE"] = False
         if glslang_version < "1.3.231" or glslang_version >= "7.0.0":
-            # Generate a relocatable shared lib on Macos
+            # Generate a relocatable shared lib on macOS
             tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
         tc.generate()
 

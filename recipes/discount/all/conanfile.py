@@ -57,7 +57,7 @@ class DiscountConan(ConanFile):
         tc.variables["DISCOUNT_ONLY_LIBRARY"] = True
         # For shared msvc
         tc.variables["CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS"] = True
-        # Relocatable shared lib on Macos
+        # Relocatable shared lib on macOS
         tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
         tc.generate()
 

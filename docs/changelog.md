@@ -180,12 +180,12 @@
 
 - [feature] Set github feedback title via config file (`feedback_title`).
 - [fix] Fix log summary html table for shared option with Conan v2.
-- [fix] ValidateInfra: Remove same OS version check for Macos nodes.
+- [fix] ValidateInfra: Remove same OS version check for macOS nodes.
 
 ### 09-December-2022 - 11:38 CET
 
-- [feature] Add environment variable to build with different Xcode/apple-clang compilers on Macos agents.
-- [feature] Add `MACOSX_DEPLOYMENT_TARGET` and `SDKROOT` env variables to build stages on Macos.
+- [feature] Add environment variable to build with different Xcode/apple-clang compilers on macOS agents.
+- [feature] Add `MACOSX_DEPLOYMENT_TARGET` and `SDKROOT` env variables to build stages on macOS.
 - [feature] Add `LongPathsEnabled` registry key check on Windows to Validate Infrastructure job.
 - [fix] Fix git user on commits when updating docs for supported platforms and configurations.
 - [fix] Fix getting commit hash when writing GitHub error messages.
@@ -267,7 +267,7 @@
 - [feature]: ValidateInfrastructure: Execute the validation when a pull-request is modifying configuration files.
 - [feature]: Conan v2: Iterate `cppstd` values in profiles to build first match.
 - [feature]: Conan v2: Apply `shared` option for the whole dependency graph.
-- [feature]: Add `tools.apple.sdk_path` to configuration in Macos (required by new build helpers).
+- [feature]: Add `tools.apple.sdk_path` to configuration in macOS (required by new build helpers).
 - [feature]: Set `tools.system.package_manager:mode=install` and `tools.system.package_manager:sudo=True` in configuration files (required by new system package manager helpers to mimic the behavior of old ones).
 - [feature]: Upgrade required Conan versions to work with the library. Minimum versions tested are now `1.49.0` and `2.0.0b1`.
 - [fix]: ValidateInfrastructure: Fix error message split.
@@ -353,7 +353,7 @@
 
 ### 25-March-2022 - 09:54 CET
 
-- [feature] Updated CMake version to 3.20 only in MacOS machines.
+- [feature] Updated CMake version to 3.20 only in macOS machines.
 - [feature] Collect requirements from test_package as well.
 - [feature] Make the conan-center-bot write a comment after merging a `Bump version` or `Bump dependencies` labeled pull request.
 - [feature] Allow SecheduledExportCheck job to report in any issue.
@@ -410,7 +410,7 @@
 
 ### 26-January-2022 - 11:14 CET
 
-- [config] Add MacOS apple-clang 13.0 configuration to a new epoch.
+- [config] Add macOS apple-clang 13.0 configuration to a new epoch.
 - [feature] Handle `header_only=True` default option in recipes.
 - [feature] Notify failed builds due to expired Visual Studio licenses.
 - [feature] Tapaholes job now sets epoch as well.
@@ -492,7 +492,7 @@
 ### 7-September-2021 - 16:49 CEST
 
 - [configs] Remove Visual Studio 2015
-- [configs] Remove Macos apple-clang 10
+- [configs] Remove macOS apple-clang 10
 - [configs] Remove Linux GCC 4.9
 - [configs] Linux Clang: keep only latest versions 10 and 11
 - [feature] Rename EAP to Access Request.
@@ -508,7 +508,7 @@
 ### 3-August-2021 - 13:29 CEST
 
 - [feature] BuildSingleReference: Create packages for apple-clang armv8 (Apple M1) in pull-requests' builds.
-- [feature] BuildSingleReference: Enforce empty workspace for Windows and MacOS nodes.
+- [feature] BuildSingleReference: Enforce empty workspace for Windows and macOS nodes.
 - [feature] Different approach to work with configuration files for profiles (internal modularibility).
 - [feature] Allow jobs to use multiple configuration files for profiles.
 - [fix] ValidateInfrastructure: Minor fixes to the automatic generation of "Supported platforms and configurations" documentation page.
@@ -561,14 +561,14 @@
 - [feature] Add mark in logs to indicate output has been trimmed.
 - [feature] Stop uploading packages to Bintray.
 - [job] RequestReviews: Automatically request team reviews for PRs ready for review.
-- [job] Add checks to validate infrastructure: MacOS version and AVX2 in CPU features.
+- [job] Add checks to validate infrastructure: macOS version and AVX2 in CPU features.
 
 ### 08-April-2021 - 17:01 CEST
 
 - [feature] Hide previous comments by the bot.
 - [feature] Use Artifactory API to promote packages from one repository to another.
 - [job] Add ability to specify a repository and branch for the hooks when running the export check.
-- [job] Add checks to validate infrastructure: Python version, Macos features.
+- [job] Add checks to validate infrastructure: Python version, macOS features.
 
 ### 05-March-2021 - 15:28 CET
 
@@ -588,13 +588,13 @@
 
 - [feature] Add new profiles to generate new compiler configurations in pull requests:
   - Linux: gcc 10, clang 10, clang 11.
-  - Macos: apple-clang 12.0.
+  - macOS: apple-clang 12.0.
 - [feature] Updated Conan client to the 1.33.1 version.
 - [engineering] PromotePackages: Remove packages after uploading.
 
 ### 05-February-2021 - 13:20 CET
 
-- [job] New job to upgrade Conan version (Windows and Macos workers).
+- [job] New job to upgrade Conan version (Windows and macOS workers).
 - [job] New job to validate infrastructure: versions of tools, installed components,... (more checks to be added).
 - [feature] Call external DeleteRepo job to remove repositories from Artifactory after a pull-request is merged.
 - [feature] New workflow for pull-requests: use `BuildSingleReference` job and better messages (canary deployment).

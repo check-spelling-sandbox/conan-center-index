@@ -48,7 +48,7 @@ class Tinyxml2Conan(ConanFile):
         tc = CMakeToolchain(self)
         tc.variables["BUILD_TESTING"] = False
         if Version(self.version) < "8.1.0":
-            # Relocatable shared lib on Macos
+            # Relocatable shared lib on macOS
             tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
         tc.generate()
 

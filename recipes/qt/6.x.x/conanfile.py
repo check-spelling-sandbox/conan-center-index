@@ -257,7 +257,7 @@ class QtConan(ConanFile):
             raise ConanInvalidConfiguration("Qt needs recent libstdc++, with charconv. please switch to gcc, or to libc++")
 
         if self.settings.os == "Macos" and self.dependencies["double-conversion"].options.shared:
-            raise ConanInvalidConfiguration("Test recipe fails because of Macos' SIP. Contributions are welcome.")
+            raise ConanInvalidConfiguration("Test recipe fails because of macOS' SIP. Contributions are welcome.")
 
         if self.options.get_safe("qtwebengine"):
             if not self.options.shared:

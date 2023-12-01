@@ -63,7 +63,7 @@ class FlannConan(ConanFile):
         tc.variables["BUILD_PYTHON_BINDINGS"] = False
         # OpenMP support can be added later if needed
         tc.variables["USE_OPENMP"] = False
-        # Generate a relocatable shared lib on Macos
+        # Generate a relocatable shared lib on macOS
         tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
         tc.generate()
 

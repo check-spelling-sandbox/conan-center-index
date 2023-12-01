@@ -83,7 +83,7 @@ class GdkPixbufConan(ConanFile):
         if self.settings.os == "Macos":
             # when running gdk-pixbuf-query-loaders
             # dyld: malformed mach-o: load commands size (97560) > 32768
-            raise ConanInvalidConfiguration("This package does not support Macos currently")
+            raise ConanInvalidConfiguration("This package does not support macOS currently")
         if self.dependencies["glib"].options.shared and is_msvc_static_runtime(self):
             raise ConanInvalidConfiguration(
                 "Linking shared glib with the MSVC static runtime is not supported"

@@ -115,7 +115,7 @@ class SpirvtoolsConan(ConanFile):
         tc.variables["SPIRV_CHECK_CONTEXT"] = False
         tc.variables["SPIRV_BUILD_FUZZER"] = False
         tc.variables["SPIRV_SKIP_EXECUTABLES"] = not self.options.build_executables
-        # To install relocatable shared libs on Macos
+        # To install relocatable shared libs on macOS
         if Version(self.version) < "1.3.239":
             tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
         # For iOS/tvOS/watchOS

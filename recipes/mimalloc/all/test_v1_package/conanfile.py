@@ -22,7 +22,7 @@ class TestPackageConan(ConanFile):
         # Injected override:
         elif self._mimalloc_option("inject"):
             if self.settings.os == "Macos":
-                # Could not simulate Macos preload, so just ignore it
+                # Could not simulate macOS preload, so just ignore it
                 return []
             return ["no_changes"]
         # Non injected override:

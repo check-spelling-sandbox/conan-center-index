@@ -19,7 +19,7 @@ class TestPackage(ConanFile):
             return
             # OK, this needs some explanation
             # You basically do not crosscompile that package, never
-            # But C3I does, Macos x86_64 to M1,
+            # But C3I does, macOS x86_64 to M1,
             # and this is why there is some cross compilation going on
             # The test will not work in that environment, so .... don't test
         output = StringIO()

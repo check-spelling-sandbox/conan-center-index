@@ -51,7 +51,7 @@ planning for the following months.
 
 ### Prepare the CI infrastructure
 
-Workers for Conan v2 will be ready for Windows, Macos and Linux alternatives.
+Workers for Conan v2 will be ready for Windows, macOS and Linux alternatives.
 [Modern docker images](https://github.com/conan-io/conan-docker-tools/tree/master/modern) with Conan v2 are already
 available to use, for example `conanio/gcc11-ubuntu16.04:2.0.0-pre`.
 Note that we will be using tag name `2.0.0-pre` until there is an

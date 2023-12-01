@@ -178,7 +178,7 @@ class OpenCascadeConan(ConanFile):
             tc.cache_variables["USE_TK"] = self.options.with_tk
             tc.cache_variables["USE_OPENGL"] = self.options.with_opengl
 
-        # Relocatable shared libs on Macos
+        # Relocatable shared libs on macOS
         tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
 
         tc.generate()

@@ -61,7 +61,7 @@ class ZstdConan(ConanFile):
             tc.variables["CMAKE_C_FLAGS"] = "-Wno-maybe-uninitialized"
 
         if Version(self.version) < "1.4.3":
-            # Generate a relocatable shared lib on Macos
+            # Generate a relocatable shared lib on macOS
             tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
         tc.generate()
 

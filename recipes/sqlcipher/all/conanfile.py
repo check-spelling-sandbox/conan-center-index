@@ -69,7 +69,7 @@ class SqlcipherConan(ConanFile):
 
     def validate(self):
         if self.options.crypto_library == "commoncrypto" and not is_apple_os(self):
-            raise ConanInvalidConfiguration("commoncrypto is only supported on Macos")
+            raise ConanInvalidConfiguration("commoncrypto is only supported on macOS")
 
     def build_requirements(self):
         self.tool_requires("tcl/8.6.13")

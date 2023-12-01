@@ -26,7 +26,7 @@ class OpenJDK(ConanFile):
         if Version(self.version) < "19.0.2" and self.settings.arch != "x86_64":
             raise ConanInvalidConfiguration("Unsupported Architecture.  This package currently only supports x86_64.")
         if self.settings.os not in ["Windows", "Macos", "Linux"]:
-            raise ConanInvalidConfiguration("Unsupported os. This package currently only support Linux/Macos/Windows")
+            raise ConanInvalidConfiguration("Unsupported os. This package currently only support Linux/macOS/Windows")
 
     def build(self):
         key = self.settings.os

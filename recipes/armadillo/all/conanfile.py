@@ -87,7 +87,7 @@ class ArmadilloConan(ConanFile):
         if self.settings.os == "Windows":
             del self.options.fPIC
         if self.settings.os == "Macos":
-            # Macos will default to Accelerate framework
+            # macOS will default to Accelerate framework
             self.options.use_blas = "framework_accelerate"
             self.options.use_lapack = "framework_accelerate"
 
@@ -120,7 +120,7 @@ class ArmadilloConan(ConanFile):
             or self.options.use_lapack == "framework_accelerate"
         ):
             raise ConanInvalidConfiguration(
-                "framework_accelerate can only be used on Macos"
+                "framework_accelerate can only be used on macOS"
             )
 
         if self.options.use_hdf5 and Version(self.version) > "12" and cross_building(self):

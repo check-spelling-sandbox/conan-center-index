@@ -45,7 +45,7 @@ class SquirrelConan(ConanFile):
     def validate(self):
         if Version(self.version) <= "3.1":
             if is_apple_os(self):
-                raise ConanInvalidConfiguration(f"{self.ref} and earlier does not support Macos")
+                raise ConanInvalidConfiguration(f"{self.ref} and earlier does not support macOS")
             if self.settings.compiler == "clang":
                 compiler_version = Version(self.settings.compiler.version)
                 if compiler_version < "9" or compiler_version >= "11":

@@ -97,7 +97,7 @@ class PodofoConan(ConanFile):
         if Version(self.version) >= "0.9.7" and not valid_min_cppstd(self, 11):
             tc.cache_variables["CMAKE_CXX_STANDARD"] = 11
 
-        # To install relocatable shared lib on Macos
+        # To install relocatable shared lib on macOS
         tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
 
         # Custom CMake options injected in our patch, required to ensure reproducible builds

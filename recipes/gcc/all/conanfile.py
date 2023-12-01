@@ -32,7 +32,7 @@ class GccConan(ConanFile):
 
     def build_requirements(self):
         if self.settings.os == "Linux":
-            # binutils recipe is broken for Macos, and Windows uses tools
+            # binutils recipe is broken for macOS, and Windows uses tools
             # distributed with msys/mingw
             self.tool_requires("binutils/2.38")
         self.tool_requires("flex/2.6.4")
@@ -57,12 +57,12 @@ class GccConan(ConanFile):
                 "Windows builds aren't currently supported. Contributions to support this are welcome."
             )
         if self.settings.os == "Macos":
-            # FIXME: This recipe should largely support Macos, however the following
+            # FIXME: This recipe should largely support macOS, however the following
             # errors are present when building using the c3i CI:
             # clang: error: unsupported option '-print-multi-os-directory'
             # clang: error: no input files
             raise ConanInvalidConfiguration(
-                "Macos builds aren't currently supported. Contributions to support this are welcome."
+                "macOS builds aren't currently supported. Contributions to support this are welcome."
             )
         if cross_building(self):
             raise ConanInvalidConfiguration(

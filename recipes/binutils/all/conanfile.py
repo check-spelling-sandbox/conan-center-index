@@ -97,7 +97,7 @@ class BinutilsConan(ConanFile):
             raise ConanInvalidConfiguration("This recipe does not support building binutils by this compiler")
 
         if self.options.target_os == "Macos":
-            raise ConanInvalidConfiguration("cci does not support building binutils for Macos since binutils is degraded there (no as/ld + armv8 does not build)")
+            raise ConanInvalidConfiguration("cci does not support building binutils for macOS since binutils is degraded there (no as/ld + armv8 does not build)")
 
         # Check whether the actual target_arch and target_os option are valid (they should be in settings.yml)
         # FIXME: does there exist a stable Conan API to accomplish this?

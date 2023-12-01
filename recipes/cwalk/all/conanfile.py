@@ -11,7 +11,7 @@ required_conan_version = ">=1.53.0"
 class CwalkConan(ConanFile):
     name = "cwalk"
     description = "Path library for C/C++. Cross-Platform for Windows, " \
-                  "MacOS and Linux. Supports UNIX and Windows path styles " \
+                  "macOS and Linux. Supports UNIX and Windows path styles " \
                   "on those platforms."
     url = "https://github.com/conan-io/conan-center-index"
     license = "MIT"

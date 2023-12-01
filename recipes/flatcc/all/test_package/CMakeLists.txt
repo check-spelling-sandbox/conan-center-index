@@ -14,10 +14,10 @@ include_directories("${GEN_DIR}" "${INC_DIR}")
 
 add_executable(monster monster.c)
 
-#On MacOS System Integrity Protection (SIP) will clear the DYLD_LIBRARY_PATH variable.
+#On macOS System Integrity Protection (SIP) will clear the DYLD_LIBRARY_PATH variable.
 #As a result calling flatcc from cmake will currently not work if the flatcc executable
 # is linked shared. As a workaround we generate the flatbuffer C files in the Conan recipe
-# when on MacOS and flatcc option 'shared' is True.
+# when on macOS and flatcc option 'shared' is True.
 if (NOT MACOS_SIP_WORKAROUND)
     add_custom_target(gen_monster_fbs ALL)
     add_custom_command (

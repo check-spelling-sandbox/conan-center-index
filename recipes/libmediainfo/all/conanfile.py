@@ -66,7 +66,7 @@ class LibmediainfoConan(ConanFile):
         tc.variables["BUILD_ZENLIB"] = False
         tc.variables["BUILD_ZLIB"] = False
         if Version(self.version) < "22.03":
-            # Generate a relocatable shared lib on Macos
+            # Generate a relocatable shared lib on macOS
             tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
         tc.generate()
         deps = CMakeDeps(self)

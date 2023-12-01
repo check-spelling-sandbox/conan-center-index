@@ -123,7 +123,7 @@ class CassandraCppDriverConan(ConanFile):
 
         if self.settings.os == "Linux":
             tc.variables["CASS_USE_TIMERFD"] = self.options.use_timerfd
-        # Relocatable shared lib on Macos
+        # Relocatable shared lib on macOS
         tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
         tc.generate()
 

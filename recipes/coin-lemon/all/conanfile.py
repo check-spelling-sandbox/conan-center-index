@@ -50,7 +50,7 @@ class CoinLemonConan(ConanFile):
         tc.variables["LEMON_ENABLE_SOPLEX"] = False
         # For msvc shared
         tc.variables["CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS"] = True
-        # Relocatable shared libs on Macos
+        # Relocatable shared libs on macOS
         tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
         # For Ninja generator
         tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0058"] = "NEW"

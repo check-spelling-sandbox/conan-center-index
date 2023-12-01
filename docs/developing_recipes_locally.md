@@ -199,7 +199,7 @@ conan test recipes/fmt/all/test_v1_package/conanfile.py fmt/9.0.0@ -pr:h=default
 
 This can be difficult for some platforms given virtualization support.
 
-For Windows and MacOS users, you can test the Linux build environments with the Docker build images.
+For Windows and macOS users, you can test the Linux build environments with the Docker build images.
 
 Assuming you've already tested it locally and it's been successfully exported to your cache, you can:
 

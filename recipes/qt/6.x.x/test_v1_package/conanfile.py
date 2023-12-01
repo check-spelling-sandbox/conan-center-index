@@ -123,7 +123,7 @@ Examples = bin/datadir/examples""".format(self.dependencies["qt"].package_folder
         self.output.info("Testing qmake")
         bin_path = os.path.join("qmake_folder", "bin")
         if self.settings.os == "Macos":
-            bin_path = os.path.join(bin_path, "test_package.app", "Contents", "MacOS")
+            bin_path = os.path.join(bin_path, "test_package.app", "Contents", "macOS")
         shutil.copy("qt.conf", bin_path)
         self.run(os.path.join(bin_path, "test_package"), run_environment=True)
 

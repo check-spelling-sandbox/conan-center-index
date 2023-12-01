@@ -66,7 +66,7 @@ class PackageConan(ConanFile):
     def validate(self):
         if is_apple_os(self):
             raise ConanInvalidConfiguration(
-                f"{self.ref} does not support MacOS at this time"
+                f"{self.ref} does not support macOS at this time"
             )
         if self.settings.compiler.cppstd:
             check_min_cppstd(self, self._min_cppstd)

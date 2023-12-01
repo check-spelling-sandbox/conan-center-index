@@ -80,7 +80,7 @@ class TkConan(ConanFile):
                 "The shared option of tcl and tk must have the same value"
             )
         if self.settings.os == "Macos" and cross_building(self):
-            raise ConanInvalidConfiguration("The tk conan recipe does not currently support Macos cross-builds. A contribution to add this functionality would be welcome.")
+            raise ConanInvalidConfiguration("The tk conan recipe does not currently support macOS cross-builds. A contribution to add this functionality would be welcome.")
 
     def layout(self):
         basic_layout(self, src_folder="src")

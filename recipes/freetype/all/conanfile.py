@@ -101,7 +101,7 @@ class FreetypeConan(ConanFile):
             tc.variables["FT_WITH_HARFBUZZ"] = False
             if self._has_with_brotli_option:
                 tc.variables["FT_WITH_BROTLI"] = self.options.with_brotli
-        # Generate a relocatable shared lib on Macos
+        # Generate a relocatable shared lib on macOS
         tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
         tc.generate()
 

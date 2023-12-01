@@ -41,7 +41,7 @@ class Iso8601LibConan(ConanFile):
 
     def generate(self):
         tc = CMakeToolchain(self)
-        # To install relocatable shared libs on Macos
+        # To install relocatable shared libs on macOS
         tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
         # Honor BUILD_SHARED_LIBS from conan_toolchain (see https://github.com/conan-io/conan/issues/11840)
         tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0077"] = "NEW"

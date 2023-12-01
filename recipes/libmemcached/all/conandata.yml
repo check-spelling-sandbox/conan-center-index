@@ -6,4 +6,4 @@ sources:
 patches:
   "1.0.18":
     - patch_file: "patches/01-compile-fix.patch"
-      patch_description: "fix compilation on MacOS"
+      patch_description: "fix compilation on macOS"

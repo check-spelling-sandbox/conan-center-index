@@ -18,7 +18,7 @@ required_conan_version = ">=1.55.0"
 
 class VulkanValidationLayersConan(ConanFile):
     name = "vulkan-validationlayers"
-    description = "Khronos official Vulkan validation layers for Windows, Linux, Android, and MacOS."
+    description = "Khronos official Vulkan validation layers for Windows, Linux, Android, and macOS."
     license = "Apache-2.0"
     topics = ("vulkan", "validation-layers")
     homepage = "https://github.com/KhronosGroup/Vulkan-ValidationLayers"

@@ -98,7 +98,7 @@ class MoltenVKConan(ConanFile):
         if self.settings.compiler.get_safe("cppstd"):
             check_min_cppstd(self, self._min_cppstd)
         if self.settings.os not in ["Macos", "iOS", "tvOS"]:
-            raise ConanInvalidConfiguration(f"{self.ref} only supported on MacOS, iOS and tvOS")
+            raise ConanInvalidConfiguration(f"{self.ref} only supported on macOS, iOS and tvOS")
         if self.settings.compiler != "apple-clang":
             raise ConanInvalidConfiguration(f"{self.ref} requires apple-clang")
         if Version(self.settings.compiler.version) < "12.0":

@@ -48,7 +48,7 @@ class LibcdsConan(ConanFile):
         if self.settings.compiler.get_safe("cppstd"):
             check_min_cppstd(self, 11)
         if self.settings.os == "Macos" and self.settings.arch == "armv8":
-            raise ConanInvalidConfiguration("Macos M1 not supported (yet)")
+            raise ConanInvalidConfiguration("macOS M1 not supported (yet)")
 
     def source(self):
         get(self, **self.conan_data["sources"][self.version], strip_root=True)

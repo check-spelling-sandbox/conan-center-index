@@ -62,7 +62,7 @@ class ZyreConan(ConanFile):
         tc.variables["CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS"] = self.options.shared
         if not self.options.shared:
             tc.preprocessor_definitions["ZYRE_STATIC"] = ""
-        # Relocatable shared lib on Macos
+        # Relocatable shared lib on macOS
         tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
         tc.generate()
         deps = CMakeDeps(self)

@@ -16,7 +16,7 @@ class FlatccTestConan(ConanFile):
         with tools.environment_append(env_build.vars):
             cmake = CMake(self)
             if tools.os_info.is_macos and self.options["flatcc"].shared:
-                # Because of MacOS System Integrity Protection it is currently not possible to run the flatcc
+                # Because of macOS System Integrity Protection it is currently not possible to run the flatcc
                 # executable from cmake if it is linked shared. As a temporary work-around run flatcc here in
                 # the build function.
                 tools.mkdir(os.path.join(self.build_folder, "generated"))

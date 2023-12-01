@@ -52,7 +52,7 @@ class LibfabricConan(ConanFile):
 
     def validate(self):
         if self.settings.os not in ["Linux", "FreeBSD", "Macos"]:
-            raise ConanInvalidConfiguration("libfabric only builds on Linux, Macos, and FreeBSD.")
+            raise ConanInvalidConfiguration("libfabric only builds on Linux, macOS, and FreeBSD.")
         for p in self._providers:
             if self.options.get_safe(p) not in ["auto", "yes", "no", "dl"] and not os.path.isdir(str(self.options.get_safe(p))):
                 raise ConanInvalidConfiguration("Option {} can only be one of 'auto', 'yes', 'no', 'dl' or a directory path")

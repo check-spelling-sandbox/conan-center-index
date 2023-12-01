@@ -66,7 +66,7 @@ class LibvaultConan(ConanFile):
             os_version = self.info.settings.get_safe("os.version")
             if os_version and Version(os_version) < self._mac_os_minimum_required_version:
                 raise ConanInvalidConfiguration(
-                    "Macos Mojave (10.14) and earlier cannot to be built because C++ standard library too old.")
+                    "macOS Mojave (10.14) and earlier cannot to be built because C++ standard library too old.")
 
         if self.settings.compiler.get_safe("cppstd"):
             check_min_cppstd(self, minimum_cpp_standard)

@@ -53,7 +53,7 @@ class LibzenConan(ConanFile):
         tc.variables["LARGE_FILES"] = self.options.enable_large_files
         # Export symbols for msvc shared
         tc.variables["CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS"] = True
-        # To install relocatable shared libs on Macos
+        # To install relocatable shared libs on macOS
         tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
         tc.generate()
 

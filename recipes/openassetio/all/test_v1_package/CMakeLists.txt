@@ -91,7 +91,7 @@ if (OPENASSETIOTEST_ENABLE_PYTHON)
     )
     list(APPEND _envvars "PYTHONHOME=${Python_PREFIX}")
 
-    # Fix library search path on MacOS.
+    # Fix library search path on macOS.
     if (APPLE)
         # The `Python::Python` target's link options are set to e.g
         # `@rpath/Python.framework/Versions/3.9/Python` but all our

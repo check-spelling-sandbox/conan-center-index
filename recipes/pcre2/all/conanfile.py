@@ -98,7 +98,7 @@ class PCRE2Conan(ConanFile):
         tc.variables["PCRE2_SUPPORT_JIT"] = self.options.support_jit
         tc.variables["PCRE2GREP_SUPPORT_CALLOUT_FORK"] = self.options.get_safe("grep_support_callout_fork", False)
         if Version(self.version) < "10.38":
-            # relocatable shared libs on Macos
+            # relocatable shared libs on macOS
             tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
         tc.generate()
 

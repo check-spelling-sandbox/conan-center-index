@@ -14,12 +14,12 @@ sources:
 patches:
   "0.8.0":
     - patch_file: "patches/0.8.0-0001-support-aarch64-macos.patch"
-      patch_description: "support M1 MacOSX"
+      patch_description: "support M1 macOSX"
       patch_type: "portability"
       patch_source: "https://github.com/google/cpu_features/pull/204"
   "0.7.0":
     - patch_file: "patches/0.7.0-0001-support-aarch64-macos.patch"
-      patch_description: "support M1 MacOSX"
+      patch_description: "support M1 macOSX"
       patch_type: "portability"
       patch_source: "https://github.com/google/cpu_features/pull/204"
   "0.6.0":

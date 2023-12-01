@@ -194,7 +194,7 @@ class LibcurlConan(ConanFile):
         if self.options.with_ssl == "schannel" and self.settings.os != "Windows":
             raise ConanInvalidConfiguration("schannel only suppported on Windows.")
         if self.options.with_ssl == "darwinssl" and not is_apple_os(self):
-            raise ConanInvalidConfiguration("darwinssl only suppported on Apple like OS (Macos, iOS, watchOS or tvOS).")
+            raise ConanInvalidConfiguration("darwinssl only suppported on Apple like OS (macOS, iOS, watchOS or tvOS).")
         if self.options.with_ssl == "openssl":
             openssl = self.dependencies["openssl"]
             if self.options.with_ntlm and openssl.options.no_des:

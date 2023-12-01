@@ -92,7 +92,7 @@ class MariadbConnectorcConan(ConanFile):
         tc.variables["INSTALL_BINDIR"] = "bin"
         tc.variables["INSTALL_LIBDIR"] = "lib"
         tc.variables["INSTALL_PLUGINDIR"] = os.path.join("lib", "plugin").replace("\\", "/")
-        # To install relocatable shared libs on Macos
+        # To install relocatable shared libs on macOS
         tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
         tc.generate()
         deps = CMakeDeps(self)

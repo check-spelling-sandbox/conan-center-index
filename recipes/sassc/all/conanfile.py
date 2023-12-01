@@ -33,7 +33,7 @@ class SasscConan(ConanFile):
 
     def validate(self):
         if not is_msvc(self) and self.info.settings.os not in ["Linux", "FreeBSD", "Macos"]:
-            raise ConanInvalidConfiguration("sassc supports only Linux, FreeBSD, Macos and Windows Visual Studio at this time, contributions are welcomed")
+            raise ConanInvalidConfiguration("sassc supports only Linux, FreeBSD, macOS and Windows Visual Studio at this time, contributions are welcomed")
 
     def requirements(self):
         self.requires("libsass/3.6.5")

@@ -8,7 +8,7 @@ required_conan_version = ">=1.53.0"
 
 class PahoMqttcConan(ConanFile):
     name = "paho-mqtt-c"
-    description = "Eclipse Paho MQTT C client library for Linux, Windows and MacOS"
+    description = "Eclipse Paho MQTT C client library for Linux, Windows and macOS"
     license = "EPL-2.0"
     url = "https://github.com/conan-io/conan-center-index"
     homepage = "https://github.com/eclipse/paho.mqtt.c"

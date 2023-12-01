@@ -72,7 +72,7 @@ class UtilLinuxLibuuidConan(ConanFile):
 
     def requirements(self):
         if self.settings.os == "Macos":
-            # Required because libintl.{a,dylib} is not distributed via libc on Macos
+            # Required because libintl.{a,dylib} is not distributed via libc on macOS
             self.requires("libgettext/0.21")
 
     def source(self):

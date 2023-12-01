@@ -48,7 +48,7 @@ class ZopfliConan(ConanFile):
         tc = CMakeToolchain(self)
         tc.variables["ZOPFLI_BUILD_INSTALL"] = True
         tc.variables["CMAKE_MACOSX_BUNDLE"] = False
-        # Generate a relocatable shared lib on Macos
+        # Generate a relocatable shared lib on macOS
         tc.cache_variables["CMAKE_POLICY_DEFAULT_CMP0042"] = "NEW"
         tc.generate()
 

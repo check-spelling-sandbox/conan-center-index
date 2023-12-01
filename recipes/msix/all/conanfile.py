@@ -112,7 +112,7 @@ class MsixConan(ConanFile):
         if self.settings.os == "Linux" and self.settings.compiler != "clang":
             raise ConanInvalidConfiguration("Only clang is supported on Linux")
         if self.settings.os != "Macos" and self.options.xml_parser == "applexml":
-            raise ConanInvalidConfiguration("applexml is supported only for MacOS")
+            raise ConanInvalidConfiguration("applexml is supported only for macOS")
         if self.settings.os != "Windows" and self.options.crypto_lib == "crypt32":
             raise ConanInvalidConfiguration("crypt32 is supported only for Windows")
         if self.settings.os != "Windows" and self.options.xml_parser == "msxml6":
@@ -122,7 +122,7 @@ class MsixConan(ConanFile):
                 if not self.options.use_external_zlib:
                     raise ConanInvalidConfiguration("Using libCompression APIs and packaging features is not supported")
                 if self.options.xml_parser != "xerces":
-                    raise ConanInvalidConfiguration("Xerces is the only supported parser for MacOS pack")
+                    raise ConanInvalidConfiguration("Xerces is the only supported parser for macOS pack")
             if not self.options.use_validation_parser:
                 raise ConanInvalidConfiguration("Packaging requires validation parser")
         if (self.options.xml_parser == "xerces" and
