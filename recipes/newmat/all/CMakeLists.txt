@@ -60,7 +60,7 @@ target_include_directories(
 target_include_directories(
   ${lib_name} INTERFACE $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
 
-# code has throwing desctructors, thus try to compile with c++98
+# code has throwing destructors, thus try to compile with c++98
 set_property(TARGET ${lib_name} PROPERTY CXX_STANDARD 98)
 
 # -------------
