@@ -133,7 +133,7 @@ int main(int argc, char *argv[]) {
         /* Send OK to parent process */
         daemon_retval_send(0);
 
-        daemon_log(LOG_INFO, "Sucessfully started");
+        daemon_log(LOG_INFO, "Successfully started");
 
         /* Prepare for select() on the signal fd */
         FD_ZERO(&fds);

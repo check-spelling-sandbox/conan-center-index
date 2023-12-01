@@ -11,7 +11,7 @@ int main()
         return 1;
     }
     
-    std::cout << "Succesfully initialized Yojimbo\n";
+    std::cout << "Successfully initialized Yojimbo\n";
     
     ShutdownYojimbo();
     

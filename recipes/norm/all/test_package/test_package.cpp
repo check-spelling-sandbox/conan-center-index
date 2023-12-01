@@ -11,7 +11,7 @@ int main(int /*argc*/, const char * /*argv*/ []) {
 		std::cout << "Failed to create handle" << std::endl;
 		return EXIT_FAILURE;
 	}
-	std::cout << "Succesfully created handle" << std::endl;
+	std::cout << "Successfully created handle" << std::endl;
 	NormDestroyInstance(handle);
 	return EXIT_SUCCESS;
 }
