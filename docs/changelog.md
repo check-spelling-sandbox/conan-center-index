@@ -92,7 +92,7 @@
 ### 24-March-2023 - 12:00 CET
 
 - [feature] Install Conan command extensions for Conan v2
-- [feature] Reduce Github requests number to execute Automatic Merge CI job
+- [feature] Reduce GitHub requests number to execute Automatic Merge CI job
 - [hotfix] Improve Promote Package CI job logging for better debug
 
 ### 10-March-2023 - 19:55 CET
@@ -472,7 +472,7 @@
 
 ### 11-October-2021 - 12:14 CEST
 
-- [configs] Configurable Github statuses to check
+- [configs] Configurable GitHub statuses to check
 - [configs] Pairing between configurations and workers (docker images, win/macos servers,...) is configurable in runtime.
 - [feature] Early(iest) stop after failure: ignore any extra messages. It provides faster feedback for users.
 - [feature] Skip stale pull-requests from automatic review requests.
@@ -500,7 +500,7 @@
 
 ### 6-September-2021 - 11:15 CEST
 
-- [feature] Display useful CI status notifications in Github pull requests.
+- [feature] Display useful CI status notifications in GitHub pull requests.
 - [feature] Upgrade Conan client version to 1.38.0.
 - [feature] Move the Conan and Artifactory configuration out of the Jenkins library.
 - [feature] Use separated files for the different profile configurations.
@@ -694,7 +694,7 @@
 - [fix] Minor fix to AutomaticMerge job (#390)
 - [fix] Modify temp folder, it will no longer be the root of the workspace.
 - [job] Populate artifact properties from BuildSingleReference job.
-- [job] New job to iterate Github repository (and commit) and find packages missing from remote.
+- [job] New job to iterate GitHub repository (and commit) and find packages missing from remote.
 
 ### 29-September-2020 - 16:21 CEST
 

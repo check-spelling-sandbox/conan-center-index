@@ -1,6 +1,6 @@
 # ConanCenterIndex Linters
 
-Some linter configuration files are available in the folder [linter](../linter), which are executed by Github Actions
+Some linter configuration files are available in the folder [linter](../linter), which are executed by GitHub Actions
 and are displayed during [code review](https://github.com/features/code-review) as annotations, to improve recipe quality.
 They consume python scripts which are executed to fit CCI rules. Those scripts use [astroid](https://github.com/PyCQA/astroid)
 and [pylint](https://pylint.pycqa.org/en/latest/) classes to parse Conan recipe files and manage their warnings and errors.

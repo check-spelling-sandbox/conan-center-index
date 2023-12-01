@@ -112,7 +112,7 @@ It's not uncommon to [patch build scripts](adding_packages/sources_and_patches.m
 
 Linters are always executed by GitHub Actions to validate parts of your recipe, for instance, if it uses migrated Conan tools imports.
 
-It is possible to run the linter locally the same way it is being run [using Github actions](../.github/workflows/linter-conan-v2.yml) by:
+It is possible to run the linter locally the same way it is being run [using GitHub actions](../.github/workflows/linter-conan-v2.yml) by:
 
 * (Recommended) Use a dedicated Python virtualenv.
 * Ensure you have required tools installed: `conan` and `pylint` (better to uses fixed versions)
