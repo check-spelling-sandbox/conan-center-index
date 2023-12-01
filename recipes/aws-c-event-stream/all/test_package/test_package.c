@@ -15,7 +15,7 @@ int main() {
     int res = aws_event_stream_message_init(&message, allocator, NULL, NULL);
 
     if (res != 0) {
-        fprintf(stderr, "Failed to init messag\n");
+        fprintf(stderr, "Failed to init message\n");
     }
 
     if (sizeof(expected_data) != aws_event_stream_message_total_length(&message)) {
