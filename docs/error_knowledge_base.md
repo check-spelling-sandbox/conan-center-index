@@ -199,7 +199,7 @@ The [test_package](https://docs.conan.io/1/creating_packages/getting_started.htm
 
 #### **<a name="KB-H025">#KB-H025</a>: "META LINES"**
 
-The following metadata lines (and similiar) are not allowed in recipes:
+The following metadata lines (and similar) are not allowed in recipes:
 
 - [Shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) to specify Python version:
 
