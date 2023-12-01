@@ -96,7 +96,7 @@ class SomeRecipe(ConanFile):
 
 #### **<a name="KB-H011">#KB-H011</a>: "LIBCXX MANAGEMENT"**
 
-If the library is detected as a pure C library (sources doesn't conatain any file with the following extensions: ["cc", "cpp", "cxx", "c++m", "cppm", "cxxm", "h++", "hh", "hxx", "hpp"]) then it has to remove the [compiler.libcxx](https://docs.conan.io/1/reference/config_files/settings.yml.html#c-standard-libraries-aka-compiler-libcxx) subsetting, because the cpp standard library shouldn't affect the binary ID:
+If the library is detected as a pure C library (sources doesn't contain any file with the following extensions: ["cc", "cpp", "cxx", "c++m", "cppm", "cxxm", "h++", "hh", "hxx", "hpp"]) then it has to remove the [compiler.libcxx](https://docs.conan.io/1/reference/config_files/settings.yml.html#c-standard-libraries-aka-compiler-libcxx) subsetting, because the cpp standard library shouldn't affect the binary ID:
 
 ```python
 class SomeRecipe(ConanFile):
@@ -164,7 +164,7 @@ For the legal reasons, and in order to reduce the size of packages, it's not all
 
 #### **<a name="KB-H022">#KB-H022</a>: "CPPSTD MANAGEMENT"**
 
-If the library is detected as a pure C library (sources doesn't conatain any file with the following extensions: ["cc", "cpp", "cxx", "c++m", "cppm", "cxxm", "h++", "hh", "hxx", "hpp"]) then it has to remove the [compiler.cppstd](https://docs.conan.io/1/howtos/manage_cpp_standard.html) subsetting, because the cpp standard library shouldn't affect the binary ID:
+If the library is detected as a pure C library (sources doesn't contain any file with the following extensions: ["cc", "cpp", "cxx", "c++m", "cppm", "cxxm", "h++", "hh", "hxx", "hpp"]) then it has to remove the [compiler.cppstd](https://docs.conan.io/1/howtos/manage_cpp_standard.html) subsetting, because the cpp standard library shouldn't affect the binary ID:
 
 ```python
 class SomeRecipe(ConanFile):

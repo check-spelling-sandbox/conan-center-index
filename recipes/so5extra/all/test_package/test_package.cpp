@@ -49,7 +49,7 @@ int main()
       1s, // Wait no more than 1s on overflow.
       mchain_props::overflow_reaction_t::abort_app );
 
-  // The chain for `quit` signal should contant no more than one message.
+  // The chain for `quit` signal should contain no more than one message.
   auto quit_ch = extra::mchains::fixed_size::create_mchain<1>(
       sobj.environment(),
       mchain_props::overflow_reaction_t::drop_newest );
