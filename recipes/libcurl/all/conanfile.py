@@ -537,7 +537,7 @@ class LibcurlConan(ConanFile):
         return arch
 
     # TODO, this should be a inner fuction of _get_linux_arm_host since it is only used from there
-    # it should not polute the class namespace, since there are iOS and Android arm aritectures also
+    # it should not polute the class namespace, since there are iOS and Android arm architectures also
     def _arm_version(self, arch):
         version = None
         match = re.match(r"arm\w*(\d)", arch)
