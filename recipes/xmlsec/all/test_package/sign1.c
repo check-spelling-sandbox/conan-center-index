@@ -13,7 +13,7 @@
  *      ./verify1 sign1-res.xml rsapub.pem
  *
  * This is free software; see Copyright file in the source
- * distribution for preciese wording.
+ * distribution for precise wording.
  * 
  * Copyright (C) 2002-2016 Aleksey Sanin <aleksey@aleksey.com>. All Rights Reserved.
  */
