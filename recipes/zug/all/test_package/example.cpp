@@ -29,7 +29,7 @@ int main()
                       pack<const int &&, float &&>{},
                   "");
 
-    // since we verifed the package usage, we declare SUCCESS
+    // since we verified the package usage, we declare SUCCESS
     // it is a compile time test, so it looks a bit wierd we can only succeed :-O
     // if we fail to use zug, this program won't compile
     std::cout << "zug package test: SUCCESS\n";
