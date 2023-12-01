@@ -11,7 +11,7 @@ class LibpropertiesConan(ConanFile):
     name = "libproperties"
     description = (
         "libproperties is a library to parse the Java .properties files. "
-        "It was writen in pure C and is fully compatible with the Java .properties file format."
+        "It was written in pure C and is fully compatible with the Java .properties file format."
     )
     license = "Apache-2.0"
     url = "https://github.com/conan-io/conan-center-index"
