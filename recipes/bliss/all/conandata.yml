@@ -5,4 +5,4 @@ sources:
 patches:
   "0.77":
     - patch_file: "patches/0001-fix-cmake.patch"
-    - patch_file: "patches/0002-no-assert-non-existent-member-variable.patch"
+    - patch_file: "patches/0002-no-assert-nonexistent-member-variable.patch"

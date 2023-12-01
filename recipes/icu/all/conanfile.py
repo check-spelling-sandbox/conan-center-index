@@ -73,7 +73,7 @@ class ICUConan(ConanFile):
     def validate(self):
         if self.options.dat_package_file:
             if not os.path.exists(str(self.options.dat_package_file)):
-                raise ConanInvalidConfiguration("Non-existent dat_package_file specified")
+                raise ConanInvalidConfiguration("Nonexistent dat_package_file specified")
 
     def layout(self):
         basic_layout(self, src_folder="src")
