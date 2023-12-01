@@ -35,7 +35,7 @@
 #include "HeightType.h"
 #include "CoordinateConversionException.h"
 /**
- * Sample code to demontrate how to use the MSP Coordinate Conversion Service.
+ * Sample code to demonstrate how to use the MSP Coordinate Conversion Service.
  * 
  * Includes the following conversions:
  *
