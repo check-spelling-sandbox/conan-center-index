@@ -82,7 +82,7 @@ this is not guaranteed and not a common practice.
 
 Forcing options of dependencies inside a ConanCenter should be avoided, except if it is mandatory for the library to build.
 Our general belief is the users input should be the most important; it's unexpected for command line arguments to be over ruled
-by specifc recipes.
+by specific recipes.
 
 You need to use the [`validate()`](https://docs.conan.io/1/reference/conanfile/methods.html#validate) method in order to ensure they check after the Conan graph is completely built.
 
@@ -166,7 +166,7 @@ class ExampleConan(ConanFile):
 It's very rare we layout "rules", most often it's guidelines, however in order to ensure graph and the package generated are usable
 for consumer, we do impose some limits on Conan features to provide a smoother first taste to using Conan.
 
-> **Note**: These are very specific to the ConanCenter being the default remote and may not be relevant to your specifc use case.
+> **Note**: These are very specific to the ConanCenter being the default remote and may not be relevant to your specific use case.
 
 * [Version ranges](https://docs.conan.io/1/versioning/version_ranges.html) are generally not allowed (see below for exemption).
 * Specify explicit [RREV](https://docs.conan.io/1/versioning/revisions.html) (recipe revision) of dependencies is not allowed.
