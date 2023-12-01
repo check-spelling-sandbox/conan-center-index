@@ -238,7 +238,7 @@ class LibcurlConan(ConanFile):
         else:
             autotools = Autotools(self)
             autotools.autoreconf()
-            # autoreconf is caalled with "--force" which regenerate all files.
+            # autoreconf is called with "--force" which regenerate all files.
             # Because we want to use a patched config.sub for tvOS/watchOS, we
             # need to call this patch after autoreconf.
             self._patch_autoreconf()
