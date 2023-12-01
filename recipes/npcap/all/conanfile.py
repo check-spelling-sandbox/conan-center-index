@@ -13,7 +13,7 @@ class NpcapConan(ConanFile):
     topics = ("pcap", "windows", "packet-capture")
     settings = "os", "arch", "build_type", "compiler"
 
-    # not needed but supress warning message from conan commands
+    # not needed but suppress warning message from conan commands
     def layout(self):
         pass
 
