@@ -13,7 +13,7 @@ class TestPackageConan(ConanFile):
 
     def test(self):
         save(self, "file.txt", "some text")
-        assert not os.path.isdir("destionation")
+        assert not os.path.isdir("destination")
         self.run("nsinstall -D destination")
         assert os.path.isdir("destination")
         assert not os.path.isfile(os.path.join("destination", "file.txt"))
