@@ -77,7 +77,7 @@
 
 ### 12-April-2023 - 16:18 CEST
 
-- [feature] Add ListPackages job the posibility to update a list via PR
+- [feature] Add ListPackages job the possibility to update a list via PR
 - [feature] Add c3i-conan2-ready label when modifying .c3i/conan_v2_ready_references.yml
 - [hotfix] Use Conan helpers to update Conan Center page
 - [hotfix] Automatic Merge reduces the number of requests for each execution
