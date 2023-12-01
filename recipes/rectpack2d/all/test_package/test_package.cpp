@@ -57,7 +57,7 @@ int main() {
 		The search stops when the bin was successfully inserted into,
 		AND the next candidate bin size differs from the last successful one by *less* then discard_step.
 
-		The best possible granuarity is achieved with discard_step = 1.
+		The best possible granularity is achieved with discard_step = 1.
 		If you pass a negative discard_step, the algorithm will search with even more granularity -
 		E.g. with discard_step = -4, the algorithm will behave as if you passed discard_step = 1,
 		but it will make as many as 4 attempts to optimize bins down to the single pixel.
