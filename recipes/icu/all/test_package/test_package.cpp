@@ -406,9 +406,9 @@ static void demoCaseMapInCPlusPlus() {
     printUnicodeString("full-titlecased/en: ", (t=s).toTitle(NULL, en));
     /* titlecase/Turkish */
     printUnicodeString("full-titlecased/tr: ", (t=s).toTitle(NULL, tr));
-    /* case-folde/default */
+    /* case-folded/default */
     printUnicodeString("full-case-folded/default: ", (t=s).foldCase(U_FOLD_CASE_DEFAULT));
-    /* case-folde/Turkic */
+    /* case-folded/Turkic */
     printUnicodeString("full-case-folded/Turkic: ", (t=s).foldCase(U_FOLD_CASE_EXCLUDE_SPECIAL_I));
 }
 
