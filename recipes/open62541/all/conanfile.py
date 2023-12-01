@@ -213,7 +213,7 @@ class Open62541Conan(ConanFile):
 
             if self.options.cpp_compatible:
                 raise ConanInvalidConfiguration(
-                    "Lower Open62541 versions than 1.1.0 are not cpp compatible due to -fpermisive flags")
+                    "Lower Open62541 versions than 1.1.0 are not cpp compatible due to -fpermissive flags")
 
         unsupported_clang_version = "8" if Version(self.version) < "1.1.0" else "9"
         if self.settings.compiler == "clang" and Version(self.settings.compiler.version) == unsupported_clang_version:
