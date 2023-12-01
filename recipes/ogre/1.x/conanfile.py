@@ -216,7 +216,7 @@ class ogrecmakeconan(ConanFile):
         for patch in self.conan_data.get("patches", {}).get(self.version, []):
             tools.patch(**patch)
         # the pkgs below are not available as conan recipes yet
-        # TODO: delte line 200-208 once the conan recipes are available
+        # TODO: delete line 200-208 once the conan recipes are available
         ogre_pkg_modules = ["AMDQBS", "Cg", "HLSL2GLSL", "GLSLOptimizer", "OpenGLES", "OpenGLES2", "OpenGLES3", "SDL2", "Softimage", "Wix"]
         ogre_pkg_module_path = os.path.join(self.build_folder, self._source_subfolder, "CMake", "Packages")
         for pkg_module in ogre_pkg_modules:
