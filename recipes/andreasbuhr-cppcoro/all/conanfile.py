@@ -56,7 +56,7 @@ class AndreasbuhrCppCoroConan(ConanFile):
                 raise ConanInvalidConfiguration("{} requires coroutine TS support. The current compiler {} {} does not support it.".format(
                     self.name, self.settings.compiler, self.settings.compiler.version))
 
-        # Currently clang expects coroutine to be implemented in a certain way (under std::experiemental::), while libstdc++ puts them under std::
+        # Currently clang expects coroutine to be implemented in a certain way (under std::experimental::), while libstdc++ puts them under std::
         # There are also other inconsistencies, see https://bugs.llvm.org/show_bug.cgi?id=48172
         # This should be removed after both gcc and clang implements the final coroutine TS
         if self.settings.compiler == "clang" and self.settings.compiler.get_safe("libcxx") == "libstdc++":
