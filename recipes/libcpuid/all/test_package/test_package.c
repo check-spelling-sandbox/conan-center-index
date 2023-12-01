@@ -22,7 +22,7 @@ int main(void)
 
 
 	if (cpu_identify(&raw, &data) < 0) {                                   // identify the CPU, using the given raw data.
-		printf("Sorrry, CPU identification failed.\n");
+		printf("Sorry, CPU identification failed.\n");
 		printf("Error: %s\n", cpuid_error());
 		return -3;
 	}
