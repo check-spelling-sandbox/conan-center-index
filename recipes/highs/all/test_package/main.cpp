@@ -21,9 +21,9 @@
 //
 // * The number of nonzeros in A is num_nz
 //
-// * The indices of the nonnzeros in the vectors of A are stored in a_index
+// * The indices of the nonzeros in the vectors of A are stored in a_index
 //
-// * The values of the nonnzeros in the vectors of A are stored in a_value
+// * The values of the nonzeros in the vectors of A are stored in a_value
 //
 // * The position in a_index/a_value of the index/value of the first
 // nonzero in each vector is stored in a_start
@@ -36,9 +36,9 @@
 //
 // * The number of nonzeros in Q is hessian_num_nz
 //
-// * The indices of the nonnzeros in the vectors of A are stored in q_index
+// * The indices of the nonzeros in the vectors of A are stored in q_index
 //
-// * The values of the nonnzeros in the vectors of A are stored in q_value
+// * The values of the nonzeros in the vectors of A are stored in q_value
 //
 // * The position in q_index/q_value of the index/value of the first
 // nonzero in each column is stored in q_start
