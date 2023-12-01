@@ -36,7 +36,7 @@ AuthorityKeyIdentifier ::= SEQUENCE {
       authorityCertIssuer       [1] GeneralNames             OPTIONAL,
       authorityCertSerialNumber [2] CertificateSerialNumber  OPTIONAL }
     -- authorityCertIssuer and authorityCertSerialNumber shall both
-    -- be present or both be absgent
+    -- be present or both be absent
 
 KeyIdentifier ::= OCTET STRING
 
