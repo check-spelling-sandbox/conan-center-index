@@ -33,7 +33,7 @@ target_link_libraries(test_package PRIVATE OpenSSL::SSL OpenSSL::Crypto)
 
 if(OPENSSL_WITH_LEGACY)
     target_sources(test_package PRIVATE digest_legacy.c)
-    # do now show deperecation warnings
+    # do now show deprecation warnings
     target_compile_definitions(test_package PRIVATE OPENSSL_SUPPRESS_DEPRECATED TEST_OPENSSL_LEGACY)
     if(OPENSSL_WITH_MD4)
       target_compile_definitions(test_package PRIVATE OPENSSL_WITH_MD4)

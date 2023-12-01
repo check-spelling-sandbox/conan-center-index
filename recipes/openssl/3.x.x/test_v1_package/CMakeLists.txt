@@ -29,7 +29,7 @@ target_link_libraries(digest OpenSSL::Crypto)
 
 if(OPENSSL_WITH_LEGACY)
     add_executable(digest_legacy digest_legacy.c)
-    # do now show deperecation warnings
+    # do now show deprecation warnings
     target_compile_definitions(digest_legacy PRIVATE OPENSSL_SUPPRESS_DEPRECATED)
     if(OPENSSL_WITH_MD4)
       target_compile_definitions(digest_legacy PRIVATE OPENSSL_WITH_MD4)
