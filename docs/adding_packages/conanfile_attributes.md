@@ -203,5 +203,5 @@ def package_id(self):
 
 def package_info(self):
    if self.options.enable_feature:
-      self.cpp_info.defines.append("FOBAR_FEATURE=1")
+      self.cpp_info.defines.append("FOOBAR_FEATURE=1")
 ```
