@@ -116,6 +116,6 @@ class CImgConan(ConanFile):
                 self.cpp_info.defines.append(define)
 
         # TODO: to remove in conan v2 once cmake_find_package* generators removed
-        #       do not use this name in CMakeDeps, it was a mistake, there is no offical CMake config file
+        #       do not use this name in CMakeDeps, it was a mistake, there is no official CMake config file
         self.cpp_info.names["cmake_find_package"] = "CImg"
         self.cpp_info.names["cmake_find_package_multi"] = "CImg"
