@@ -265,7 +265,7 @@ See [Removing older versions](adding_packages/sources_and_patches.md#removing-ol
 It depends. You can not mix both regular projects with system packages, but you can provide package wrappers for system packages. However, Conan can not track system packages, like their version and options, which creates a fragile situation where affects libraries and binaries built in your package but can not be totally reproduced.
 Also, system package managers require administrator permission to install packages, which is not always possible and may break limited users. Moreover, more than one Conan package may require the same system package and there is no way to track their mutual usage.
 
-The hook [KB-H032](error_knowledge_base.md#KB-H032) does not allow `system_requirement` nor `SystemPackageTool` in recipes, to avoid mixing both regular projects with
+The hook [KB-H032](error_knowledge_base.md#KB-H032) blocks `system_requirement` and `SystemPackageTool` in recipes, to avoid mixing both regular projects with
 system packages at same recipe.
 
 There are exceptions where some projects are closer to system drivers or hardware and packaging as a regular library could result
