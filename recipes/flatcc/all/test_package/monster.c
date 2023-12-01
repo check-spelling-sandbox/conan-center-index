@@ -262,7 +262,7 @@ int access_monster_buffer(const void *buffer)
     // If `inv` were absent, the length would 0, so the above test is redundant.
     test_assert(inv_len == 10);
     // Index 0 is the first, index 2 is the third.
-    // NOTE: C++ uses the `Get` terminology for vector elemetns, C use `at`.
+    // NOTE: C++ uses the `Get` terminology for vector elements, C use `at`.
     uint8_t third_item = flatbuffers_uint8_vec_at(inv, 2);
     test_assert(third_item == 2);
 
