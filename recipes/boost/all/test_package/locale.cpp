@@ -30,7 +30,7 @@ int main()
     // Display current year
     std::cout << format("{1,ftime='%Y'}") % now << std::endl;
     //
-    // Run forward untill current year is the date
+    // Run forward until current year is the date
     //
     for(now=start; period::year(now) == current_year;) {
         // Print heading of month
