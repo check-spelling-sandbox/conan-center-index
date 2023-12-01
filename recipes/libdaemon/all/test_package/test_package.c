@@ -53,7 +53,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    /* Set indetification string for the daemon for both syslog and PID file */
+    /* Set identification string for the daemon for both syslog and PID file */
     daemon_pid_file_ident = daemon_log_ident = daemon_ident_from_argv0(argv[0]);
 
     /* Check if we are called with -k parameter */
