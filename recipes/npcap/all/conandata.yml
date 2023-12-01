@@ -1,4 +1,4 @@
-# We don't need a new verion here for each release of Npcap
+# We don't need a new version here for each release of Npcap
 # Only a new version is required if the SDK version changes
 # You can find SDK version in https://github.com/nmap/npcap/blob/{GIT_TAG}/version.h
 

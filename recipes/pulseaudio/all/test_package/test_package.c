@@ -3,6 +3,6 @@
 
 int main()
 {
-    printf("pulse audio verions %s\n", pa_get_library_version());
+    printf("pulse audio versions %s\n", pa_get_library_version());
     return 0;
 }
