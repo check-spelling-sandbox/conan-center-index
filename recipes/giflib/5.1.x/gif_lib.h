@@ -35,7 +35,7 @@ extern "C" {
 
 #ifdef _MSC_VER
     #if (_MSC_VER >= 1800)
-        /* C99 is not supported for MSVC vefore VS2013 */
+        /* C99 is not supported for MSVC before VS2013 */
         #include <stdbool.h>
     #else
         #ifndef __cplusplus
