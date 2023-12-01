@@ -178,7 +178,7 @@
 
 ### 15-December-2022 - 11:12 CET
 
-- [feature] Set github feeback title via config file (`feedback_title`).
+- [feature] Set github feedback title via config file (`feedback_title`).
 - [fix] Fix log summary html table for shared option with Conan v2.
 - [fix] ValidateInfra: Remove same OS version check for Macos nodes.
 
