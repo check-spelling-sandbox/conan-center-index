@@ -91,7 +91,7 @@ int main() {
   status_32 = ANwriteann(data_desc_id, DATA_DESC_TXT, (int32) strlen(DATA_DESC_TXT));
 
   /*
-   * Teminate access to the vgroup and to the V interface.
+   * Terminate access to the vgroup and to the V interface.
    */
   status_32 = Vdetach(vgroup_id);
   status_n = Vend(file_id);
