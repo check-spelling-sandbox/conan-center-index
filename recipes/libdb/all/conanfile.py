@@ -72,7 +72,7 @@ class LibdbConan(ConanFile):
             raise ConanInvalidConfiguration(f"{self.ref} Visual Studio 2019 is currently not supported. Contributions are welcomed!")
             
         if self.settings.os == "Macos" and self.settings.arch == "armv8":
-            raise ConanInvalidConfiguration(f"{self.ref} macOS Apple Sillicon is currently not supported. Contributions are welcomed!")
+            raise ConanInvalidConfiguration(f"{self.ref} macOS Apple Silicon is currently not supported. Contributions are welcomed!")
 
         if self.options.get_safe("with_cxx"):
             if self.settings.compiler == "clang" and Version(self.settings.compiler.version) < "6":
