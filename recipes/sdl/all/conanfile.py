@@ -80,12 +80,12 @@ class SDLConan(ConanFile):
         "libunwind": True,
     }
     generators = "CMakeDeps", "PkgConfigDeps", "VirtualBuildEnv"
-    
+
     @property
     def _is_clang_cl(self):
         return self.settings.os == "Windows" and self.settings.compiler == "clang" and \
                self.settings.compiler.get_safe("runtime")
-    
+
     def layout(self):
         cmake_layout(self, src_folder="src")
 
@@ -208,7 +208,7 @@ class SDLConan(ConanFile):
                 # If using conan-provided iconv, search for the symbol "libiconv_open"
                 replace_check = "check_library_exists(iconv libiconv_open"
             else:
-                # When no tusing conan-provided icon, don't check for iconv at all
+                # When not using conan-provided icon, don't check for iconv at all
                 replace_check = "#check_library_exists(iconv iconv_open"
             replace_in_file(self, cmakelists, "check_library_exists(iconv iconv_open",
                             replace_check)
