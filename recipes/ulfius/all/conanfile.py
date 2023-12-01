@@ -135,7 +135,7 @@ class UlfiusConan(ConanFile):
             """), append=True)
 
         if self.options.with_gnutls:
-            # FIXME: make sure gnutls creates GnuTLSCOnfig.cmake + GnuTLS::GnuTLS target + GNUTLS_VERSION_STRING
+            # FIXME: make sure gnutls creates GnuTLSConfig.cmake + GnuTLS::GnuTLS target + GNUTLS_VERSION_STRING
             pass
 
     def _patch_sources(self):
