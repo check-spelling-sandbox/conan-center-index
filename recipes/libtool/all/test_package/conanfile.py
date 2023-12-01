@@ -59,7 +59,7 @@ class TestPackageConan(ConanFile):
             env.define("VSCMD_SKIP_SENDTELEMETRY", "1")
             env.vars(self, scope="build").save_script("conanbuild_vcvars_options.bat")
 
-        # Use two instances of AutotoolsToolchain with namespaceas,
+        # Use two instances of AutotoolsToolchain with namespaces,
         # as we have two different projects with different settings.
         ar_wrapper = unix_path(self, self.conf.get("user.automake:lib-wrapper", check_type=str))
         msvc_vars = {
