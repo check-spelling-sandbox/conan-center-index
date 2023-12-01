@@ -38,7 +38,7 @@ void addr_cb(struct nl_object *p_nl_object, void *data) {
     // this routine just returns p_rtnl_addr->a_ifindex
     int cur_ifindex = rtnl_addr_get_ifindex(p_rtnl_addr);
     if(cur_ifindex != ifindex) {
-        // skip interaces where the index differs.
+        // skip interfaces where the index differs.
         return;
     }
 
