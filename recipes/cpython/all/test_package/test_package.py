@@ -98,7 +98,7 @@ def test_spam():
 def test_bz2():
     import bz2
 
-    compressed = bz2.compress(b"hellow world")
+    compressed = bz2.compress(b"hello world")
     if compressed is None:
         raise Exception("bz2.compress returned no data")
 
