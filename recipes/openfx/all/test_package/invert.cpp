@@ -133,7 +133,7 @@ public :
 /** @brief render for the filter */
 
 ////////////////////////////////////////////////////////////////////////////////
-// basic plugin render function, just a skelington to instantiate templates from
+// basic plugin render function, just a skeleton to instantiate templates from
 
 
 /* set up and run a processor */
