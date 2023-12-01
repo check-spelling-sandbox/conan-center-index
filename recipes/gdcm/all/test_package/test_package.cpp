@@ -76,7 +76,7 @@ int main(int argc, char* argv[])
   // the dataset is the the set of element we are interested in:
   gdcm::DataSet& ds = file.GetDataSet();
 
-  // Contruct a static(*) type for Image Comments :
+  // Construct a static(*) type for Image Comments :
   gdcm::Attribute<0x0020, 0x4000> imagecomments;
   imagecomments.SetValue("Hello, World !");
 
