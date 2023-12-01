@@ -44,7 +44,7 @@ int main(int argc, char * argv []) {
 
     puts("mosquitto_subscribe");
     if (mosquitto_subscribe(st_mosquitto, NULL, "#", 0) != MOSQ_ERR_SUCCESS) {
-        fprintf(stderr, "Could not suscribe to MQTT broker\n");
+        fprintf(stderr, "Could not subscribe to MQTT broker\n");
     }
 
     puts("mosquitto_destroy");
