@@ -1,5 +1,5 @@
 #include <cassandra.h>
-/* Use "#include <dse.h>" when connecting to DataStax Enterpise */
+/* Use "#include <dse.h>" when connecting to DataStax Enterprise */
 #include <iostream>
 
 int main(int argc, char* argv[]) {
