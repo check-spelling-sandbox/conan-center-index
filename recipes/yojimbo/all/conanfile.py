@@ -62,7 +62,7 @@ class YojimboConan(ConanFile):
 
         if self.settings.os == "Windows":
         
-            # Replace Windows directory seperator
+            # Replace Windows directory separator
             include_path_str = include_path_str.replace("\\", "/")
             lib_path_str = lib_path_str.replace("\\", "/")
             
