@@ -8,7 +8,7 @@ required_conan_version = ">=1.53.0"
 
 class MujsConan(ConanFile):
     name = "mujs"
-    description = "MuJS is a lightweight Javascript interpreter designed for " \
+    description = "MuJS is a lightweight JavaScript interpreter designed for " \
                   "embedding in other software to extend them with scripting capabilities."
     license = "ISC"
     topics = ("interpreter", "javascript")
