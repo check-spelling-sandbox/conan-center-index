@@ -8,7 +8,7 @@ required_conan_version = ">=1.52.0"
 
 class PopplerDataConan(ConanFile):
     name = "poppler-data"
-    description = "encoding files for use with poppler, enable CJK and Cyrrilic"
+    description = "encoding files for use with poppler, enable CJK and Cyrillic"
     homepage = "https://poppler.freedesktop.org/"
     topics = "poppler", "pdf", "rendering"
     license = "BSD-3-Clause", "GPL-2.0-or-later", "MIT"
