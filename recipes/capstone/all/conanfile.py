@@ -66,7 +66,7 @@ class CapstoneConan(ConanFile):
             tc.variables["CAPSTONE_BUILD_SHARED"] = self.options.shared
         tc.variables["CAPSTONE_BUILD_TESTS"] = False
         tc.variables["CAPSTONE_BUILD_CSTOOL"] = False
-        tc.variables["CAPSTONE_ARCHITECUTRE_DEFAULT"] = False
+        tc.variables["CAPSTONE_ARCHITECTURE_DEFAULT"] = False
         if Version(self.version) < "5.0":
             tc.variables["CAPSTONE_USE_SYS_DYN_MEM"] = self.options.use_default_alloc
         else:
