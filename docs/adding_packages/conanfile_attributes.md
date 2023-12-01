@@ -122,7 +122,7 @@ Adding options is often needed to toggle specific library features on/off. Regar
 The actual recipe code then may look like:
 
 ```py
-    options = {"enable_locales": [True, False]} # Changes which files are compiled in to the library
+    options = {"enable_locales": [True, False]} # Changes which files are compiled into the library
     default_options = {"enable_locales": True}
 ```
 
