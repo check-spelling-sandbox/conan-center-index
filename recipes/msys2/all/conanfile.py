@@ -122,7 +122,7 @@ class MSYS2Conan(ConanFile):
 
     @property
     def _msys_dir(self):
-        subdir = "msys64" # top-level directoy in tarball
+        subdir = "msys64" # top-level directory in tarball
         return os.path.join(self.source_folder, subdir)
 
     def build(self):
