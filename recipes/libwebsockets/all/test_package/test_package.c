@@ -17,7 +17,7 @@ static int callback_example( struct lws *wsi, enum lws_callback_reasons reason, 
 			break;
 
 		case LWS_CALLBACK_CLIENT_RECEIVE:
-			/* Handle incomming messages here. */
+			/* Handle incoming messages here. */
 			break;
 
 		case LWS_CALLBACK_CLIENT_WRITEABLE:
