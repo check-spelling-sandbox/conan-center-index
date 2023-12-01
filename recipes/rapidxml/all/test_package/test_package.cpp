@@ -30,7 +30,7 @@ int main(int argc, char **argv)
     printf("I have visited %s in %s. ",
            brewery_node->first_attribute("name")->value(),
            brewery_node->first_attribute("location")->value());
-    // Interate over the beers
+    // Iterate over the beers
     for(rapidxml::xml_node<> * beer_node = brewery_node->first_node("Beer"); beer_node; beer_node = beer_node->next_sibling())
     {
       printf("On %s, I tried their %s which is a %s. ",
