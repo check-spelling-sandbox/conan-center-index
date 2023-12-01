@@ -32,6 +32,6 @@ class TestPackageConan(ConanFile):
 
     def test(self):
         if not cross_building(self):
-            # Scons build put executable righe here
+            # Scons build put executable right here
             bin_path = os.path.join(self.recipe_folder, "test_package")
             self.run(bin_path, env="conanrun")
