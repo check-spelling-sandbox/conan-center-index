@@ -19,7 +19,7 @@ github:
 
 slack:
   credential_success_url: SLACK_SUCCESS_WEBHOOK_URL
-  ceredential_errors_url: SLACK_FAILURE_WEBHOOK_URL
+  credential_errors_url: SLACK_FAILURE_WEBHOOK_URL
 
 # Things related to Jenkins jobs
 tasks:
