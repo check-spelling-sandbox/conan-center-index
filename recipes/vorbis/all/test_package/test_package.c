@@ -70,7 +70,7 @@ int main(){
   /* if we were reading/writing a file, it would also need to in
      binary mode, eg, fopen("file.wav","wb"); */
   /* Beware the evil ifdef. We avoid these where we can, but this one we
-     cannot. Don't add any more, you'll probably go to hell if you do. */
+     cannot. Don't add anymore, you'll probably go to hell if you do. */
   _setmode( _fileno( stdin ), _O_BINARY );
   _setmode( _fileno( stdout ), _O_BINARY );
 #endif
