@@ -11,7 +11,7 @@ class LibGit2Conan(ConanFile):
     name = "libgit2"
     description = (
         "libgit2 is a portable, pure C implementation of the Git core methods "
-        "provided as a re-entrant linkable library with a solid API"
+        "provided as a reentrant linkable library with a solid API"
     )
     topics = ("libgit2", "git", "scm")
     url = "https://github.com/conan-io/conan-center-index"
