@@ -36,7 +36,7 @@ int main() {
   //create buffer to store data
   Buffer buffer;
   //use quick serialization function,
-  //it will use default configuration to setup all the nesessary steps
+  //it will use default configuration to setup all the necessary steps
   //and serialize data to container
   auto writtenSize = bitsery::quickSerialization<OutputAdapter>(buffer, data);
 
