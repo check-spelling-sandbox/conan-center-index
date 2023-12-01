@@ -85,7 +85,7 @@ class OpenColorIOConan(ConanFile):
         if Version(self.version) >= "2.3.0" and \
             self.settings.compiler == "clang" and \
             self.settings.compiler.libcxx == "libc++":
-            raise ConanInvalidConfiguration(f"{self.ref} deosn't support clang with libc++")
+            raise ConanInvalidConfiguration(f"{self.ref} doesn't support clang with libc++")
 
         # opencolorio>=2.2.0 requires minizip-ng with with_zlib
         if Version(self.version) >= "2.2.0" and \

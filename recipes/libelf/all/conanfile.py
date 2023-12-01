@@ -76,7 +76,7 @@ class LibelfConan(ConanFile):
             env.generate()
             tc = AutotoolsToolchain(self)
             tc.configure_args.extend([
-                # it's required, libelf doesnt seem to understand DESTDIR
+                # it's required, libelf doesn't seem to understand DESTDIR
                 f"--prefix={unix_path(self, self.package_folder)}",
             ])
             tc.generate()

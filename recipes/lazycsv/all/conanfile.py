@@ -52,7 +52,7 @@ class LazyCSVConan(ConanFile):
             )
         if is_msvc(self):
             raise ConanInvalidConfiguration(
-                f"{self.ref} doen't support MSVC."
+                f"{self.ref} doesn't support MSVC."
             )
 
     def source(self):
