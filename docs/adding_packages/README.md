@@ -98,7 +98,7 @@ The documents in this folder are written to explain each folder, file, method, a
 6. [Test Package](test_packages.md)
 
 The one place you are certain to find a lot of information is <https://docs.conan.io>, this has the documentation for everything in Conan.
-There are helpful tutorials for cross-build, detailed explication for profiles and settings and much much more!
+There are helpful tutorials for cross-build, detailed explication for profiles and settings and much, much more!
 
 ## :three: Submitting a Package
 
