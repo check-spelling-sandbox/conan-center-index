@@ -88,7 +88,7 @@ The [2.0 migrations docs](https://docs.conan.io/1/migrating_to_2.0/recipes.html#
 should cover the technical details, however for ConanCenterIndex we need to make sure there are no collisions
 `conf_info` must be named `user.<recipe_name>:<variable>`.
 
-For usage options of `conf_info`, the [documenation](https://docs.conan.io/1/reference/config_files/global_conf.html?highlight=conf_info#configuration-in-your-recipes)
+For usage options of `conf_info`, the [documentation](https://docs.conan.io/1/reference/config_files/global_conf.html?highlight=conf_info#configuration-in-your-recipes)
 
 In ConanCenterIndex this will typically looks like:
 
