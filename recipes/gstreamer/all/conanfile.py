@@ -174,7 +174,7 @@ class GStreamerConan(ConanFile):
             self.cpp_info.components["gstreamer-check-1.0"].system_libs = ["rt", "m"]
         self.cpp_info.components["gstreamer-check-1.0"].set_property("pkg_config_custom_content", pkgconfig_custom_content)
 
-        # gstcoreelements and gstcoretracers are plugins which should be loaded dynamicaly, and not linked to directly
+        # gstcoreelements and gstcoretracers are plugins which should be loaded dynamically, and not linked to directly
         if not self.options.shared:
             self.cpp_info.components["gstcoreelements"].set_property("pkg_config_name", "gstcoreelements")
             self.cpp_info.components["gstcoreelements"].names["pkg_config"] = "gstcoreelements"
