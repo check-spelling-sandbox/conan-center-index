@@ -45,7 +45,7 @@ class Open62541Conan(ConanFile):
         # alarms,conditions,events: UA_ENABLE_SUBSCRIPTIONS_EVENTS=On and UA_ENABLE_SUBSCRIPTIONS_ALARMS_CONDITIONS=On
         "subscription": [True, False, "With Events", "events", "alarms,conditions,events"],
         # False: UA_ENABLE_METHODCALLS=Off
-        # True: UA_ENABLE_METHODCALLS=Onn
+        # True: UA_ENABLE_METHODCALLS=On
         "methods": [True, False],
         # False: UA_ENABLE_NODEMANAGEMENT=Off
         # True: UA_ENABLE_NODEMANAGEMENT=On
