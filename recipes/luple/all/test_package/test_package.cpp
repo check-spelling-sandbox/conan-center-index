@@ -36,7 +36,7 @@ int main() {
   printf( "get_person: tuple size %d, name: %s, id: %d\n", size( p ), get<$("name")>( p ), get<$("id")>( p ) );
 
 
-  //usual luple mehods work too
+  //usual luple methods work too
 
   get<0>( p ) = "irene";
   get<int>( p ) = 4;
