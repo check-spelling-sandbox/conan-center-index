@@ -82,7 +82,7 @@ or check out the conversation in conan-io/conan#11937 for the brave.
 
 ## New conf_info properties
 
-As described in the documentation `self.user_info` has been depreated and you are now required to use
+As described in the documentation `self.user_info` has been deprecated and you are now required to use
 `self.conf_info` to define individual properties to expose to downstream recipes.
 The [2.0 migrations docs](https://docs.conan.io/1/migrating_to_2.0/recipes.html#removed-self-user-info)
 should cover the technical details, however for ConanCenterIndex we need to make sure there are no collisions
